@@ -1,0 +1,71 @@
+<script setup>
+
+import CV from './components/CV.vue'
+import Hero from './components/Hero.vue'
+import Services from './components/Services.vue'
+import Nav from './components/Nav.vue'
+import Portfolio from './components/Portfolio.vue'
+import About from './components/About.vue'
+import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
+
+
+</script>
+
+
+
+<template>
+   
+
+<main class="lg:grid grid-cols-12">
+
+
+<!-- Left Column -->
+    <div class="col-span-3 hidden lg:block pb-5">
+        
+        <CV />
+
+    </div>
+
+
+<!-- Center Column -->
+    <div class="lg:col-span-8 col-span-12 mx-5">
+
+        <Hero />
+        <Services />
+        <Portfolio />
+        <About />
+        <Contact />
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Right Column -->
+    <div class="col-span-1 hidden lg:block mr-5">
+
+        <Nav />
+
+    </div>
+
+
+
+</main>
+    
+  
+<Footer />
+
+
+</template>
+
