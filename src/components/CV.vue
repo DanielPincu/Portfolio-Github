@@ -9,6 +9,12 @@
         <h1 class="text-2xl font-bold text-center mt-5 font-serif">{{ profile.name }}</h1>
         <p class="text-center text-gray-500">{{ profile.title }}</p>
       </div>
+      <!-- Additional sections -->
+      <div v-for="(additionalSection, index) in additionalSections" :key="'additionalSection' + index" class="mx-10 mt-5 flex flex-col bg-slate-200 rounded-full items-center justify-end h-16">
+        <h1 class="text-xl bg-gray-300 rounded-full px-4">{{ additionalSection.title }}</h1>
+        <p class="text-xl">{{ additionalSection.content }}</p>
+      </div>
+     
     </div>
 
     <!-- Dynamic Sections -->
@@ -38,7 +44,6 @@
 </template>
 
 <script setup>
-
 import { onMounted } from 'vue';
 import anime from 'animejs';
 
@@ -70,57 +75,37 @@ const dynamicSections = [
       // Add more skills as needed
     ]
   },
-  {
-    title: "Hobbies",
-    items: [
-      { name: "Radioamatør", percentage: "100% Addicted" },
-      { name: "Astronomer", percentage: "Are we alone...?" },
-      { name: "UAV pilot", percentage: "Clear skies" },
-      { name: "Arduino colector", percentage: "OMG" }
-      // Add more hobbies as needed
-    ]
-  },
-
-
-  {
-    title: "Education",
-    items: [
-      { name: "Frontend Developer", percentage: "100%" },
-      { name: "Astronomy", percentage: "80%" },
-      { name: "Radioamatør", percentage: "80%" }
-      // Add more education as needed
-    ] },
-
-  {
-    title: "Experience",
-    items: [
-      { name: "Frontend Developer", percentage: "100%" },
-      { name: "Astronomy", percentage: "80%" },
-      { name: "Radioamatør", percentage: "80%" },
-      { name: "UAV pilot", percentage: "80%" },
-      { name: "Arduino colector", percentage: "80%" }
-      // Add more experience as needed
-    ]
-  }
-  
+  // Your existing dynamic sections data here
 ];
 
-
-
+// Additional sections data
+const additionalSections = [
+  {
+    title: "Age:",
+    content: "32"
+  },
+  {
+    title: "Residence:",
+    content: "Denmark"
+  },
+  {
+    title: "Location:",
+    content: "Esbjerg"
+  },
+  {
+    title: "Freelance:",
+    content: "Available"
+  }
+];
 
 onMounted(() => {
-      anime({
-        targets: '.tt',
-        opacity: [0, 1],
-        translateY: [-500, 0],
-        translateX: [400, 0], 
-        easing: "linear",
-        duration: 3000,
-        
-       
-      });
-    });
-
-
-
+  anime({
+    targets: '.tt',
+    opacity: [0, 1],
+    translateY: [-500, 0],
+    translateX: [400, 0], 
+    easing: "linear",
+    duration: 3000,
+  });
+});
 </script>

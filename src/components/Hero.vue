@@ -1,4 +1,45 @@
 <template>
+   <div class="lg:hidden sticky top-0 z-10 bg-yellow-300 -mx-5">
+
+    
+
+
+      <div class="mt-10 flex justify-center">
+
+        <div class="flex items-center my-5 px-5">
+
+         <h1 class="text-lg font-bold text-blue-900">Home</h1>
+          
+      
+        </div>
+      
+        
+          <div class="flex items-center  my-5 px-5">
+            
+            
+            <h1 class="text-lg font-bold text-blue-900">Portfolio</h1>
+            
+        
+          </div>
+
+
+          <div class="flex items-center  my-5 px-5">
+            
+            <h1 class="text-lg font-bold text-blue-900">About</h1>
+            
+        
+          </div>
+        
+          <div class="flex items-center  my-5 px-5">
+            
+            <h1 class="text-lg font-bold text-blue-900">Contact</h1>
+            
+        
+          </div>
+        
+      </div>
+    </div>
+
   <div class="lg:grid grid-cols-2 items-center pb-0 md:pb-20 xl:border-black xl:border-2 xl:rounded-full mt-20">
     <!-- intro start -->
     <div class="flex flex-col">
@@ -38,4 +79,13 @@ const scrollToElement = (target) => {
     });
   }
 };
+
+
+import {useDark, useToggle}  from "@vueuse/core"
+
+
+
+    const isDark = useDark()  
+    const toggleDark = useToggle(isDark)
+    
 </script>
