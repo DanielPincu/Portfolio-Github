@@ -10,13 +10,13 @@
 
     <div class="grid md:grid-cols-2 gap-10 mt-16">
       <div v-for="(card, index) in filteredCards" :key="index" class="hover:scale-105 ease-out duration-500 cursor-pointer" @click="toggleVisibility(index)">
-        <div class="bg-yellow-400 rounded-3xl p-10 h-80">
-          <h1 class="text-4xl font-bold cursor-pointer mb-5">{{ card.title }}</h1>
-          <p class="text-xl">{{ card.description }}</p>
+        <div class="bg-slate-200 rounded-3xl p-10 h-96">
+          <h1 class="text-4xl text-blue-500 dark:text-red-500 font-bold cursor-pointer mb-5">{{ card.title }}</h1>
+          <p class="text-lg">{{ card.description }}</p>
         </div>
         <div v-show="visibleDiv === index">
           <a :href="card.imageUrl"><img class="bg-yellow-400 rounded-3xl p-10" :src="card.imageUrl" alt=""></a>
-          <p class="text-xl bg-yellow-400 rounded-3xl p-10">{{ card.details }}</p>
+          <p class="text-lg bg-yellow-400 rounded-3xl p-10">{{ card.details }}</p>
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@ import { ref, computed } from 'vue';
 const cards = ref([
   {
     title: 'Trapholt',
-    description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding, Denmark",
+    description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding",
     category: 'Web Design',
     imageUrl: 'src/assets/img/trap1.png',
     details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility'
@@ -45,7 +45,7 @@ const cards = ref([
 
   {
     title: 'InDesign',
-    description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding, Denmark",
+    description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding",
     category: 'Art', 
     imageUrl: 'src/assets/img/trap1.png',
     details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility'

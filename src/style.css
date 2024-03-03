@@ -3,7 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
 body {
-    font-family: 'Nunito', sans-serif;
-     /* background-image: url('src/assets/img/bg.jpg');   */
+  font-family: 'Kode Mono', monospace;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
 }
