@@ -22,7 +22,7 @@
       <h1 class="font-bold text-2xl text-center pt-5">{{ section.title }}</h1>
       <div v-for="(item, idx) in section.items" :key="idx" class="mx-10 my-5 flex flex-col bg-slate-200 rounded-full items-center h-16 justify-center">
         <h1 class="text-xl font-bold px-4">{{ item.name }}</h1>
-        <div class="w-32 2xl:w-64 bg-gray-500 rounded-full dark:bg-gray-700">
+        <div class="w-32 2xl:w-64 bg-gray-500 rounded-full">
           <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-white p-1 leading-none rounded-full" :style="{ width: item.percentage }">{{ item.percentage }}</div>
         </div>
       </div>
@@ -30,14 +30,8 @@
   </div>
 
 
-  <div class="mt-5 pt-10 text-center bg-white shadow-2xl rounded-3xl ml-5 h-[390px] sticky top-10">
-        <h1 class="text-2xl font-bold">Contact information</h1>
-        <p>
-          <strong>Email:</strong> email@example.com <br>
-          <strong>Phone number:</strong> 123-456-7890 <br>
-          <strong>Address:</strong> 1234 Street Name, City, Country
-        </p>
-        <!-- Add your contact information here -->
+  <div class="mt-5 ml-16 h-[390px] sticky xl:top-10">
+        <img class="w-80" src="/src/assets/img/bc.png" alt="">
     </div>
 
 

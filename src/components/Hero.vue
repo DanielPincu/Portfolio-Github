@@ -48,7 +48,7 @@
       </h1>
       <p class="text-lg mt-5 font-medium">Designing and coding beautifully simple things requires a blend of creativity, technical skill, and attention to detail. It's a craft that involves finding elegant solutions to complex problems, all while keeping the end user in mind.</p>
       <a v-for="(button, index) in buttons" :key="index" :href="button.target" @click.prevent="scrollToElement(button.target)">
-        <div class="text-xl bg-blue-500 mt-10 p-5  ml-0 w-30 rounded-full text-center  hover:text-white transition-all duration-400 dark:bg-red-500">{{ button.text }}</div>
+        <div class="text-xl bg-blue-500 mt-10 p-5  ml-0 w-30 rounded-full text-center text-white hover:text-blue-900 transition-all duration-400 dark:bg-red-500">{{ button.text }}</div>
       </a>
     </div>
     <!-- intro ends -->

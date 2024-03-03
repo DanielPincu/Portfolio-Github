@@ -2,7 +2,7 @@
   <div id="portfolio">
     <div class="mb-4">
       <label for="category" class="block text-sm font-medium text-gray-700">Filter by Category:</label>
-      <select id="category" v-model="selectedCategory" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm">
+      <select id="category" v-model="selectedCategory" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:focus:ring-red-500 dark:focus:border-red-500">
         <option value="" class="bg-yellow-700">All</option>
         <option v-for="category in categories" :key="category">{{ category }}</option>
       </select>
@@ -15,8 +15,8 @@
           <p class="text-lg">{{ card.description }}</p>
         </div>
         <div v-show="visibleDiv === index">
-          <a :href="card.imageUrl"><img class="bg-yellow-400 rounded-3xl p-10" :src="card.imageUrl" alt=""></a>
-          <p class="text-lg bg-yellow-400 rounded-3xl p-10">{{ card.details }}</p>
+          <a :href="card.imageUrl"><img class="bg-slate-300 rounded-3xl p-10" :src="card.imageUrl" alt=""></a>
+          <p class="text-lg bg-slate-200 rounded-3xl p-10">{{ card.details }}</p>
         </div>
       </div>
     </div>
