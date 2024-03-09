@@ -29,82 +29,20 @@
     </div>
   </div>
 
-
+  <!-- Sticky Image -->
   <div class="mt-5 ml-16 h-[390px] sticky xl:top-10">
-        <img class="w-80" src="/src/assets/img/bc.png" alt="">
-    </div>
-
-
+    <img class="w-80" src="/src/assets/img/bc.png" alt="">
+  </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import anime from 'animejs';
+import { profileData, additionalSectionsData, dynamicSectionsData } from '../modules/cv';
 
-const profile = {
-  name: "Daniel Pincu",
-  title: "Front-end Developer",
-  image: "src/assets/img/pd.png"
-};
-
-const additionalSections = [
-  {
-    title: "Age:",
-    content: "32"
-  },
-  {
-    title: "Residence:",
-    content: "Denmark"
-  },
-  {
-    title: "Location:",
-    content: "Esbjerg"
-  },
-  {
-    title: "Freelance:",
-    content: "Available"
-  }
-];
-
-
-const dynamicSections = [
-  {
-    title: "Languages",
-    items: [
-      { name: "Romanian", percentage: "100%" },
-      { name: "English", percentage: "80%" },
-      { name: "Danish", percentage: "20%" }
-      // Add more languages as needed
-    ]
-  },
-  {
-    title: "Skills",
-    items: [
-      { name: "HTML/CSS", percentage: "80%" },
-      { name: "Bootstrap", percentage: "80%" },
-      { name: "TailwindCSS", percentage: "80%" },
-      { name: "Wordpress", percentage: "50%" },
-      { name: "VueJS", percentage: "40%" },
-      { name: "ReactJS", percentage: "20%"}
-      // Add more skills as needed
-    ]
-  },
-  {
-    title: "Tools",
-    items: [
-      { name: "VSCode", percentage: "80%" },
-      { name: "Figma", percentage: "80%" },
-      { name: "Photoshop", percentage: "50%" },
-      { name: "Illustrator", percentage: "50%" },
-      { name: "Git", percentage: "80%" },
-      { name: "Github", percentage: "80%" }
-      // Add more tools as needed
-    ]
-  }
-];
-
-
-
+const profile = ref(profileData);
+const additionalSections = ref(additionalSectionsData);
+const dynamicSections = ref(dynamicSectionsData);
 
 onMounted(() => {
   anime({
@@ -117,3 +55,5 @@ onMounted(() => {
   });
 });
 </script>
+
+
