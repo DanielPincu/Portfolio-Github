@@ -18,7 +18,7 @@
     </div>
 
     <!-- Dynamic Sections -->
-    <div v-for="(section, index) in dynamicSections" :key="index" class="pb-5">
+    <div v-for="(section, index) in dynamicSections" :key="index" class="pt-10">
       <h1 class="font-bold text-2xl text-center pt-5">{{ section.title }}</h1>
       <div v-for="(item, idx) in section.items" :key="idx" class="mx-10 my-5 flex flex-col bg-slate-200 rounded-full items-center h-16 justify-center">
         <h1 class="text-xl font-bold px-4">{{ item.name }}</h1>
@@ -47,6 +47,26 @@ const profile = {
   image: "src/assets/img/pd.png"
 };
 
+const additionalSections = [
+  {
+    title: "Age:",
+    content: "32"
+  },
+  {
+    title: "Residence:",
+    content: "Denmark"
+  },
+  {
+    title: "Location:",
+    content: "Esbjerg"
+  },
+  {
+    title: "Freelance:",
+    content: "Available"
+  }
+];
+
+
 const dynamicSections = [
   {
     title: "Languages",
@@ -69,28 +89,22 @@ const dynamicSections = [
       // Add more skills as needed
     ]
   },
-  // Your existing dynamic sections data here
-];
-
-// Additional sections data
-const additionalSections = [
   {
-    title: "Age:",
-    content: "32"
-  },
-  {
-    title: "Residence:",
-    content: "Denmark"
-  },
-  {
-    title: "Location:",
-    content: "Esbjerg"
-  },
-  {
-    title: "Freelance:",
-    content: "Available"
+    title: "Tools",
+    items: [
+      { name: "VSCode", percentage: "80%" },
+      { name: "Figma", percentage: "80%" },
+      { name: "Photoshop", percentage: "50%" },
+      { name: "Illustrator", percentage: "50%" },
+      { name: "Git", percentage: "80%" },
+      { name: "Github", percentage: "80%" }
+      // Add more tools as needed
+    ]
   }
 ];
+
+
+
 
 onMounted(() => {
   anime({
