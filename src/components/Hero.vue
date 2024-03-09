@@ -1,5 +1,5 @@
 <template>
-   <div class="lg:hidden sticky top-0 z-10 bg-yellow-300 -mx-5">
+   <div class="lg:hidden sticky top-0 z-10 bg-yellow-300 -mx-5" id="home">
 
     
 
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-  <div class="lg:grid grid-cols-2 items-center pb-0 md:pb-20 xl:border-black xl:border-2 xl:rounded-full mt-20 pl-24 pt-20 pr-5 mr-5">
+  <div class="lg:grid grid-cols-2 items-center pb-0 md:pb-20 xl:border-black xl:border-2 xl:rounded-full mt-20 pl-[45px] lg:pl-24 pt-20 pr-5 mr-5">
     <!-- intro start -->
     <div class="flex flex-col">
       <h1 class="text-xl font-bold ml-0">

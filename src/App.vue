@@ -9,6 +9,12 @@ import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 
+import { ref } from 'vue';
+
+const homeId = ref('home');
+const portfolioId = ref('portfolio');
+const contactId = ref('contact');
+const aboutId = ref('about');
 
 </script>
 
@@ -31,11 +37,11 @@ import Footer from './components/Footer.vue'
 <!-- Center Column -->
     <div class="lg:col-span-8 col-span-12 mx-5">
 
-        <Hero />
+        <Hero :id="homeId" />
         <Services />
-        <Portfolio />
-        <About />
-        <Contact />
+        <Portfolio :id="portfolioId" />
+        <About :id="aboutId"/>
+        <Contact :id="contactId" />
 
     </div>
 

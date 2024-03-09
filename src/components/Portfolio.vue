@@ -1,5 +1,5 @@
 <template>
-  <div id="portfolio">
+  <div :id="portfolioId">
     <!-- Filter dropdown -->
     <div class="mb-4">
       <label for="category" class="block text-sm font-medium text-gray-700">Filter by Category:</label>
@@ -45,7 +45,7 @@ const cards = ref([
     category: 'Design',
     imageUrl: 'src/assets/img/trap1.png',
     details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility',
-    dynamicLink: 'https://www.chatognito.com' // Dynamic link property
+    dynamicLink: 'src/assets/img/trap1.png' // Dynamic link property
   },
 
   {

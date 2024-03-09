@@ -4,7 +4,7 @@
        <h1>Contact me</h1>
    </div> -->
 
-<div class="flex justify-center items-center bg-white rounded-3xl shadow-xl" id="contact">
+<div class="flex justify-center items-center bg-white rounded-3xl shadow-xl"  :id="contactId">
 
 	<div class="container mx-auto">
 
