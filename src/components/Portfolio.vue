@@ -28,67 +28,7 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-
-const cards = ref([
-  {
-    title: 'Trapholt',
-    description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding",
-    category: 'Web Design',
-    imageUrl: 'src/assets/img/trap1.png',
-    details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility',
-    dynamicLink: 'https://www.danielpincu.com' // Dynamic link property
-  },
-  // Add other card objects with dynamicLink property
-  {
-    title: 'Chatognito',
-    description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding, Denmark",
-    category: 'Design',
-    imageUrl: 'src/assets/img/trap1.png',
-    details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility',
-    dynamicLink: 'src/assets/img/trap1.png' // Dynamic link property
-  },
-
-  {
-    title: 'InDesign',
-    description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding",
-    category: 'Art', 
-    imageUrl: 'src/assets/img/trap1.png',
-    details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility'
-  },
-
-  {
-    title: 'InDesign',
-    description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding, Denmark",
-    category: 'Art', 
-    imageUrl: 'src/assets/img/trap1.png',
-    details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility'
-  },
-  {
-    title: 'InDesign',
-    description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding, Denmark",
-    category: 'Art', 
-    imageUrl: 'src/assets/img/trap1.png',
-    details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility'
-  },
-  {
-    title: 'InDesign',
-    description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding, Denmark",
-    category: 'Art', 
-    imageUrl: 'src/assets/img/trap1.png',
-    details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility'
-  },
-
-
-  
-  // Add more card objects as needed
-]);
-
-// Computed property for unique categories
-const categories = computed(() => {
-  const uniqueCategories = new Set();
-  cards.value.forEach(card => uniqueCategories.add(card.category));
-  return Array.from(uniqueCategories);
-});
+import { portfolioCards } from '../modules/portfolio.js';
 
 // Ref for selected category and visibleDiv
 const selectedCategory = ref('');
@@ -99,9 +39,16 @@ const toggleVisibility = (index) => {
   visibleDiv.value = visibleDiv.value === index ? null : index;
 };
 
+// Computed property for unique categories
+const categories = computed(() => {
+  const uniqueCategories = new Set();
+  portfolioCards.forEach(card => uniqueCategories.add(card.category));
+  return Array.from(uniqueCategories);
+});
+
 // Computed property for filtered cards based on selected category
 const filteredCards = computed(() => {
-  if (!selectedCategory.value) return cards.value;
-  return cards.value.filter(card => card.category === selectedCategory.value);
+  if (!selectedCategory.value) return portfolioCards;
+  return portfolioCards.filter(card => card.category === selectedCategory.value);
 });
 </script>

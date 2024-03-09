@@ -1,5 +1,3 @@
-
-
 export const profileData = {
     name: "Daniel Pincu",
     title: "Front-end Developer",
