@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-xl rounded-3xl px-20 pb-20 bg-white mt-1" :id="aboutId">
+  <div class="shadow-xl rounded-3xl mt-20 px-20 pb-20 bg-white" :id="aboutId">
     <div>
       <div class="flex justify-center">
         <h1 class="text-4xl pt-10 pb-10">About Me</h1>
@@ -40,7 +40,6 @@ const buttonText = computed(() => {
 const paragraphs = ref([
   "Hey, my name is Daniel Pincu, and I've got a knack for turning ideas into reality. As a multimedia designer, I thrive on simplicity with a splash of creativity.",
   "Whether it's crafting sleek logos or dreaming up responsive websites, I'm always up for a challenge. Variety is the spice of life, and I love diving into different projects to discover new ways to make them shine.",
-  "Whether it's crafting sleek logos or dreaming up responsive websites, I'm always up for a challenge. Variety is the spice of life, and I love diving into different projects to discover new ways to make them shine."
 ]);
 
 const extraParagraphs = ref([

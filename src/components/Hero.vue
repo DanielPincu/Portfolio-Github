@@ -13,13 +13,13 @@
     </div>
   </div>
 
-  <div class="lg:grid grid-cols-2 items-center pb-0 md:pb-20 xl:border-black xl:border-2 xl:rounded-full mt-20 pl-[45px] lg:pl-24 pt-20 pr-5 mr-5">
+  <div class="lg:grid grid-cols-2 items-center pb-0 md:pb-20 xl:border-blue-900 xl:dark:border-red-900 xl:border-4 xl:rounded-full mt-20 pl-[45px] lg:pl-24 pt-20 pr-5 mr-5 xl:bg-[url('src/assets/img/matrix.jpeg')] bg-cover">
     <!-- intro start -->
     <div class="flex flex-col">
-      <h1 class="text-xl font-bold ml-0">
+      <h1 class="text-xl font-bold ml-0 xl:text-white">
         I’m Daniel Pincu <br> <span class="text-blue-500 dark:text-red-500">Front-end</span> Developer
       </h1>
-      <p class="text-lg mt-5 font-medium">Designing and coding beautifully simple things requires a blend of creativity, technical skill, and attention to detail. It's a craft that involves finding elegant solutions to complex problems, all while keeping the end user in mind.</p>
+      <p class="text-3xl mt-5 font-medium xl:text-white">Welcome to the Matrix</p>
       <a v-for="(button, index) in buttons" :key="index" :href="button.target" @click.prevent="scrollToElement(button.target)">
         <div class="text-xl bg-blue-500 mt-10 p-5  ml-0 w-30 rounded-full text-center text-white hover:text-blue-900 transition-all duration-400 dark:bg-red-500">{{ button.text }}</div>
       </a>
@@ -27,7 +27,7 @@
     <!-- intro ends -->
 
     <!-- image start -->
-    <div class="flex justify-center ">
+    <div class="flex justify-center">
       <img class="rounded-full w-96 p-10" src="https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=2823&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Daniel Pincu">
     </div>
     <!-- image ends -->
