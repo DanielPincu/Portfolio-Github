@@ -18,7 +18,7 @@
         </div>
         <div v-show="visibleDiv === index">
           <!-- Dynamic link -->
-          <a :href="card.dynamicLink"><img class="bg-slate-300 rounded-3xl p-10" :src="card.imageUrl" alt=""></a>
+          <a :href="card.dynamicLink"><img class="bg-blue-500 dark:bg-red-500 rounded-3xl p-10" :src="card.imageUrl" alt=""></a>
           <p class="text-lg bg-slate-200 rounded-3xl p-10">{{ card.details }}</p>
         </div>
       </div>
