@@ -32,7 +32,11 @@
   </div> -->
 
   <div class="relative">
-  <img class="rounded-full mx-auto w-[90%] m-10" src="../assets/img/matrix.jpeg" alt="">
+
+  <img class="rounded-full mx-auto w-[90%] m-10 block dark:hidden" src="../assets/img/matrix.jpeg" alt="">
+  <img class="rounded-full mx-auto w-[90%] m-10 hidden dark:block" src="../assets/img/matrix_reversed.jpg" alt="">
+
+
   <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
     <h1 class="text-sm md:text-xl pb-10 xl:text-3xl font-bold text-white">
       I’m Daniel Pincu <br> <span class="text-blue-500 dark:text-red-500">Front-end</span> Developer
@@ -40,8 +44,12 @@
     <p class="text-xl md:text-3xl xl:text-5xl mb-5  text-white">Welcome to the Matrix<span class="animate-pulse animate-fast">|</span>
 </p>
     <div class="flex md:pt-5 2xl:pt-20">
-      <button class="bg-blue-500 border-blue-600 border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44 mr-2 md:mr-20 2xl:mr-64">Fetch CV</button>
-      <button class="bg-red-500 border-red-600 border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44">Watch CV</button>
+      <button class="hidden dark:block bg-blue-500 dark:bg-red-500 border-blue-600 dark:border-red-500  border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44 mr-2 md:mr-20 2xl:mr-64">Fetch CV</button>
+
+      <button class="block dark:hidden bg-blue-500 dark:bg-red-500 border-blue-600 dark:border-red-500  border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44 mr-2 md:mr-20 2xl:mr-64">Watch CV</button>
+
+      <button class=" hidden dark:block bg-red-500 dark:bg-blue-500 border-red-600 dark:border-blue-500  border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44">Watch CV</button>
+      <button class=" block dark:hidden bg-red-500 dark:bg-blue-500 border-red-600 dark:border-blue-500  border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44">Fetch CV</button>
     </div>
   </div>
 </div>
