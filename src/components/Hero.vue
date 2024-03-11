@@ -13,8 +13,8 @@
     </div>
   </div>
 
-  <div class="lg:grid grid-cols-2 items-center pb-0 md:pb-20 xl:border-blue-900 xl:dark:border-red-900 xl:border-4 xl:rounded-full mt-20 pl-[45px] lg:pl-24 pt-20 pr-5 mr-5 xl:bg-[url('src/assets/img/matrix.jpeg')] bg-cover">
-    <!-- intro start -->
+  <!-- <div class="h-[700px] lg:grid grid-cols-2 items-center pb-0 md:pb-20 xl:border-blue-900 xl:dark:border-red-900 xl:border-4 xl:rounded-full mt-20 pl-[45px] lg:pl-24 pt-20 pr-5 mr-5 bg-[url('src/assets/img/matrix.jpeg')] bg-cover">
+   
     <div class="flex flex-col">
       <h1 class="text-xl font-bold ml-0 xl:text-white">
         I’m Daniel Pincu <br> <span class="text-blue-500 dark:text-red-500">Front-end</span> Developer
@@ -24,14 +24,31 @@
         <div class="text-xl bg-blue-500 mt-10 p-5  ml-0 w-30 rounded-full text-center text-white hover:text-blue-900 transition-all duration-400 dark:bg-red-500">{{ button.text }}</div>
       </a>
     </div>
-    <!-- intro ends -->
-
-    <!-- image start -->
+   
     <div class="flex justify-center">
       <img class="rounded-full w-96 p-10" src="https://images.unsplash.com/photo-1521119989659-a83eee488004?q=80&w=2823&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Daniel Pincu">
+    </div> 
+    
+  </div> -->
+
+  <div class="relative">
+  <img class="rounded-full mx-auto w-[90%] m-10" src="../assets/img/matrix.jpeg" alt="">
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+    <h1 class="text-sm md:text-xl pb-10 xl:text-3xl font-bold text-white">
+      I’m Daniel Pincu <br> <span class="text-blue-500 dark:text-red-500">Front-end</span> Developer
+    </h1>
+    <p class="text-xl md:text-3xl xl:text-5xl mb-5  text-white">Welcome to the Matrix<span class="animate-pulse animate-fast">|</span>
+</p>
+    <div class="flex md:pt-5 2xl:pt-20">
+      <button class="bg-blue-500 border-blue-600 border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44 mr-2 md:mr-20 2xl:mr-64">Fetch CV</button>
+      <button class="bg-red-500 border-red-600 border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44">Watch CV</button>
     </div>
-    <!-- image ends -->
   </div>
+</div>
+
+
+
+  
 </template>
 
 <script setup>
@@ -70,3 +87,22 @@ const scrollTo = (target, event) => {
   }
 };
 </script>
+
+<style>
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .animate-pulse {
+    animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-fast {
+    animation-duration: 0.5s; /* Change this value to make it faster */
+  }
+</style>
