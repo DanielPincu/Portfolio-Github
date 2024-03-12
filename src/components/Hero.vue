@@ -33,27 +33,28 @@
 
   <div class="relative">
 
-  <img class="rounded-full mx-auto w-[90%] m-10 block dark:hidden" src="../assets/img/matrix.jpeg" alt="">
-  <img class="rounded-full mx-auto w-[90%] m-10 hidden dark:block" src="../assets/img/matrix_reversed.jpg" alt="">
+  <img class="rounded-full  mx-auto w-[90%] m-10 dark:scale-x-[-1]" src="../assets/img/matrix.jpeg" alt="">
+  <!-- <img class="rounded-full  mx-auto w-[90%] m-10 hidden dark:block" src="../assets/img/matrix_reversed.jpg" alt=""> -->
 
 
   <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
     <h1 class="text-sm md:text-xl pb-10 xl:text-3xl font-bold text-white">
       I’m Daniel Pincu <br> <span class="text-blue-500 dark:text-red-500">Front-end</span> Developer
     </h1>
-    <p class="text-xl md:text-3xl xl:text-5xl mb-5  text-white">Welcome to the Matrix<span class="animate-pulse animate-fast">|</span>
+    <p class="text-xl md:text-3xl xl:text-5xl mb-1  text-white">Welcome to the Matrix<span class="animate-pulse animate-fast">|</span>
 </p>
-    <div class="flex md:pt-5 2xl:pt-20">
-      <button class="hidden dark:block bg-blue-500 dark:bg-red-500 border-blue-600 dark:border-red-500  border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44 mr-2 md:mr-20 2xl:mr-64">Fetch CV</button>
+   <div class="flex md:pt-5 2xl:pt-24">
+  <button class="hidden dark:block bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-10 md:mr-44 2xl:mr-64">Fetch CV</button>
 
-      <button class="block dark:hidden bg-blue-500 dark:bg-red-500 border-blue-600 dark:border-red-500  border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44 mr-2 md:mr-20 2xl:mr-64">Watch CV</button>
+  <button class="block dark:hidden bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-10 md:mr-44 2xl:mr-64">Watch CV</button>
 
-      <button class=" hidden dark:block bg-red-500 dark:bg-blue-500 border-red-600 dark:border-blue-500  border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44">Watch CV</button>
-      <button class=" block dark:hidden bg-red-500 dark:bg-blue-500 border-red-600 dark:border-blue-500  border-2 shadow-xl text-white px-2 2xl:px-0 py-2 rounded-full w-44">Fetch CV</button>
-    </div>
-  </div>
+  <button class="hidden dark:block bg-gradient-to-r from-red-400 to-red-600 dark:from-blue-400 dark:to-blue-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 2xl:px-0 py-2 rounded-full w-38 md:w-44">Watch CV</button>
+  
+  <button class="block dark:hidden bg-gradient-to-r from-red-400 to-red-600 dark:from-blue-400 dark:to-blue-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 2xl:px-0 py-2 rounded-full w-38 md:w-44">Fetch CV</button>
 </div>
 
+  </div>
+</div>
 
 
   
