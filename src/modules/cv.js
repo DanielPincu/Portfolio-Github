@@ -6,19 +6,19 @@ export const profileData = {
   
   export const additionalSectionsData = [
     {
-      title: "Age:",
+      title: "Age",
       content: "32"
     },
     {
-      title: "Residence:",
+      title: "Residence",
       content: "Denmark"
     },
     {
-      title: "Location:",
+      title: "Location",
       content: "Esbjerg"
     },
     {
-      title: "Freelance:",
+      title: "Freelance",
       content: "Available"
     }
   ];

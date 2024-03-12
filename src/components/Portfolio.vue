@@ -3,7 +3,7 @@
     <!-- Filter dropdown -->
     <div class="mb-4">
       <label for="category" class="block text-sm font-medium text-gray-700">Filter by Category:</label>
-      <select id="category" v-model="selectedCategory" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:focus:ring-red-500 dark:focus:border-red-500">
+      <select id="category" v-model="selectedCategory" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-blue-100 dark:bg-red-100 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:focus:ring-red-500 dark:focus:border-red-500">
         <option value="" class="bg-yellow-700">All</option>
         <option v-for="category in categories" :key="category">{{ category }}</option>
       </select>
@@ -12,14 +12,14 @@
     <!-- Portfolio cards -->
     <div class="grid md:grid-cols-2 gap-10 mt-16">
       <div v-for="(card, index) in filteredCards" :key="index" class="hover:scale-105 ease-out duration-500 cursor-pointer" @click="toggleVisibility(index)">
-        <div class="bg-slate-200 rounded-3xl p-10 h-96">
+        <div class="bg-blue-200 dark:bg-red-200 rounded-3xl p-10 h-96">
           <h1 class="text-4xl text-blue-500 dark:text-red-500 font-bold cursor-pointer mb-5">{{ card.title }}</h1>
           <p class="text-lg">{{ card.description }}</p>
         </div>
         <div v-show="visibleDiv === index">
           <!-- Dynamic link -->
-          <a :href="card.dynamicLink"><img class="bg-blue-500 dark:bg-red-500 rounded-3xl p-10" :src="card.imageUrl" alt=""></a>
-          <p class="text-lg bg-slate-200 rounded-3xl p-10">{{ card.details }}</p>
+          <a :href="card.dynamicLink"><img class="bg-blue-500 dark:bg-red-400 rounded-3xl p-10" :src="card.imageUrl" alt=""></a>
+          <p class="text-lg bg-blue-200 dark:bg-red-200 rounded-3xl p-10">{{ card.details }}</p>
         </div>
       </div>
     </div>
