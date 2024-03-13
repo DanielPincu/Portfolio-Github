@@ -22,7 +22,7 @@
       <h1 class="font-bold text-2xl text-center pt-5">{{ section.title }}</h1>
       <div v-for="(item, idx) in section.items" :key="idx" class="mx-10 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center">
         <h1 class="text-xl font-bold px-4">{{ item.name }}</h1>
-        <div class="w-32 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
+        <div class="w-36 xl:w-56 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
           <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-white p-1 leading-none rounded-full" :style="{ width: item.percentage }">{{ item.percentage }}</div>
         </div>
       </div>
