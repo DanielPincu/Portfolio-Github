@@ -9,7 +9,7 @@
       <svg class="text-blue-500 dark:text-red-500 w-32 md:w-64 justify-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" :d="service.svgPath" />
       </svg>
-      <div v-show="visibleDiv === index" class="animate-bounce bg-blue-200 dark:bg-red-300 rounded-3xl drop-shadow-xl h-60 flex flex-col items-center mb-2 w-full">
+      <div v-show="visibleDiv === index" class="animate-bounce bg-blue-300 dark:bg-red-300 rounded-3xl drop-shadow-xl h-60 flex flex-col items-center mb-2 w-full">
         <h1 class="text-xl p-5">{{ service.description }}</h1>
       </div>
     </div>
