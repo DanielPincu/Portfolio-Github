@@ -61,12 +61,12 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { navItems } from '../modules/nav'; // Importing external navigation data
+// import { ref } from 'vue';
+// const buttons = ref([
+//   { text: 'Discover more', target: '#portfolio' },
+// ]);
 
-const buttons = ref([
-  { text: 'Discover more', target: '#portfolio' },
-]);
+import { navItems } from '../modules/nav'; // Importing external navigation data
 
 const scrollToElement = (target) => {
   const element = document.querySelector(target);
