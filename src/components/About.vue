@@ -4,7 +4,7 @@
       <div class="flex justify-center">
         <h1 class="text-4xl pt-10 pb-10">About Me</h1>
       </div>
-      <div class="grid lg:grid-cols-2">
+      <div class="grid lg:grid-cols-1">
         <div>
           <p v-for="(paragraph, index) in paragraphs" :key="index" class="mb-5 text-xl">{{ paragraph }}</p>
         </div>
@@ -46,7 +46,7 @@ const extraParagraphs = ref([
   "My mission? Making things look awesome! From logos that leave a lasting impression to motion graphics that bring static images to life, I've got a bit of everything up my sleeve. User interfaces? Consider it done. I'm here to sprinkle a little magic on your project and make it stand out from the crowd."
 ]);
 
-const imageSrc = ref("src/assets/img/MiniMe.jpg");
+const imageSrc = ref("/assets/img/MiniMe.jpg");
 </script>
 
 
