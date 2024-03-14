@@ -59,7 +59,7 @@ const aboutId = ref('about');
 
 
 <!-- Right Column -->
-    <div class="col-span-1 hidden lg:block mr-5 rounded-full xl:bg-blue-100 xl:dark:bg-red-100">
+    <div class="col-span-1 hidden lg:block mr-5 rounded-full xl:bg-blue-100 xl:dark:bg-red-100 xl:border-2 xl:border-blue-300 xl:dark:border-red-300">
 
         <Nav />
 
