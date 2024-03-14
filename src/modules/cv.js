@@ -1,9 +1,9 @@
 export const profileData = {
     name: "Daniel Pincu",
     title: "Front-end Developer",
-    image: "../assets/img/pd.png",
+    image: ".../assets/img/pd.png",
   };
-  
+
   
   export const additionalSectionsData = [
     {
