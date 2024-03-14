@@ -15,7 +15,7 @@
 
   <div class="relative">
 
-  <img class="rounded-full border-4 border-blue-500 dark:border-red-500 mx-auto w-[90%] m-10 dark:scale-x-[-1]" src="../assets/img/matrix.jpeg" alt="">
+  <img class="rounded-full border-4 border-blue-500 dark:border-red-500 mx-auto w-[90%] m-10 dark:scale-x-[-1]" src="/assets/img/matrix.jpeg" alt="">
   
 
 
