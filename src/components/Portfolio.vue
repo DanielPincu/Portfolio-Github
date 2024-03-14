@@ -36,19 +36,12 @@
     </div>
 
 
-
-
-
-
-
-
-
-
 </template>
 
 <script setup>
 import { ref, computed } from 'vue';
 import { portfolioCards } from '../modules/portfolio.js';
+const portfolioId = 'portfolio';
 
 // Ref for selected category and visibleDiv
 const selectedCategory = ref('');
@@ -72,7 +65,6 @@ const filteredCards = computed(() => {
   return portfolioCards.filter(card => card.category === selectedCategory.value);
 });
 </script>
-
 
 <style>
 
