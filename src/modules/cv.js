@@ -4,6 +4,7 @@ export const profileData = {
     image: "../assets/img/pd.png",
   };
   
+  
   export const additionalSectionsData = [
     {
       title: "Age",
