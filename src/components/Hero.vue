@@ -26,7 +26,7 @@
     <p class="text-xl md:text-3xl xl:text-5xl mb-1  text-white">Welcome to the Matrix<span class="animate-pulse animate-fast">|</span>
 </p>
    <div class="flex md:pt-5 2xl:pt-24">
-    <a href="../assets/img/cv.pdf">
+    <a href="./src/assets/img/cv.pdf">
   <button class="hidden dark:block cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-10 md:mr-44 2xl:mr-64">Fetch CV</button>
 </a>
 
