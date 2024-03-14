@@ -3,7 +3,7 @@
     <!-- Profile Info -->
     <div>
       <div class="flex justify-center">
-        <img class="w-48 mt-10" :src="profile.image" :alt="profile.name">
+        <img class="w-48 mt-10" src="../assets/img/pd.png" :alt="profile.name">
       </div>
       <div class="border-b-2 border-zinc-400 pb-5">
         <h1 class="text-2xl font-bold text-center mt-5">{{ profile.name }}</h1>
