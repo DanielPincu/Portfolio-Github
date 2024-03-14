@@ -33,8 +33,8 @@
 
   <div class="relative">
 
-  <img class="rounded-full  mx-auto w-[90%] m-10 dark:scale-x-[-1]" src="../assets/img/matrix.jpeg" alt="">
-  <!-- <img class="rounded-full  mx-auto w-[90%] m-10 hidden dark:block" src="../assets/img/matrix_reversed.jpg" alt=""> -->
+  <img class="rounded-full border-4 border-blue-500 dark:border-red-500 mx-auto w-[90%] m-10 dark:scale-x-[-1]" src="../assets/img/matrix.jpeg" alt="">
+  
 
 
   <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
@@ -103,7 +103,7 @@ const scrollTo = (target, event) => {
       opacity: 1;
     }
     50% {
-      opacity: 0.5;
+      opacity: 0.1;
     }
   }
   
@@ -112,6 +112,6 @@ const scrollTo = (target, event) => {
   }
   
   .animate-fast {
-    animation-duration: 0.5s; /* Change this value to make it faster */
+    animation-duration: 0.3s;
   }
 </style>
