@@ -1,5 +1,5 @@
 export const profileData = {
-    name: "Daniel",
+    name: "Daniel Pincu",
     title: "Front-end Developer",
     image: "./assets/img/pd.png",
   };
