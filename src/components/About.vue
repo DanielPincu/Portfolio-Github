@@ -1,10 +1,10 @@
 <template>
-  <div class="shadow-xl rounded-3xl mt-20 px-20 pb-20 bg-blue-200 dark:bg-red-200" :id="aboutId">
+  <div class="shadow-xl rounded-3xl mt-20 px-10 pb-20 bg-blue-200 dark:bg-red-200" :id="aboutId">
     <div>
       <div class="flex justify-center">
         <h1 class="text-4xl pt-10 pb-10">About Me</h1>
       </div>
-      <div class="grid lg:grid-cols-1">
+      <div class="grid xl:grid-cols-2 grid-cols-1">
         <div>
           <p v-for="(paragraph, index) in paragraphs" :key="index" class="mb-5 text-xl">{{ paragraph }}</p>
         </div>
@@ -13,10 +13,10 @@
         </div>
       </div>
 
-      <button class="py-5" @click="toggleReadMore">{{ buttonText }}</button>
+      <button v-if="!isReadMore" class="py-5" @click="toggleReadMore">{{ buttonText }}</button>
 
       <div v-show="isReadMore">
-        <p v-for="(paragraph, index) in extraParagraphs" :key="index">{{ paragraph }}</p>
+        <p class="text-xl py-10" v-for="(paragraph, index) in extraParagraphs" :key="index">{{ paragraph }}</p>
 
         <button @click="toggleReadMore">{{ buttonText }}</button>
       </div>
@@ -47,6 +47,6 @@ const extraParagraphs = ref([
 ]);
 
 const imageSrc = ref("/assets/img/MiniMe.jpg");
+
+const aboutId = "aboutId"; // You need to define this as it's referenced in the template
 </script>
-
-
