@@ -1,6 +1,6 @@
 <template>
   <div class="lg:hidden sticky top-0 z-10 bg-blue-500 text-white dark:bg-red-500 -mx-5">
-    <div class="flex justify-between items-center mt-10 mx-5 sticky top-20">
+    <div class="flex justify-center items-center mt-10 sticky top-20">
       <div class="flex my-5">
         <div v-for="(navItem, index) in navItems" :key="index" class="mx-3">
           <a @click="scrollTo(navItem.href, $event)" class="text-lg font-bold cursor-pointer hover:scale-110 hover:transition ease-in-out duration-700">{{ navItem.label }}</a>
