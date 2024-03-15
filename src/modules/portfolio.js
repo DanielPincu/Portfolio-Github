@@ -14,7 +14,7 @@ export const portfolioCards = [
       category: 'Design',
       imageUrl: '/assets/img/trap2.png',
       details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility',
-      dynamicLink: 'src/assets/img/OK.mp4' // Dynamic link property
+      dynamicLink: '/assets/img/OK.mp4' // Dynamic link property
     },
   
     {
