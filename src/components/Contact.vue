@@ -1,8 +1,4 @@
 <template>
-   
-   <!-- <div class="flex justify-center text-4xl pt-32">
-       <h1>Contact me</h1>
-   </div> -->
 
 <div class="flex justify-center items-center bg-blue-200 dark:bg-red-200 rounded-3xl shadow-xl mt-20"  :id="contactId">
 

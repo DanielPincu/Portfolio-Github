@@ -2,7 +2,7 @@
   <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200" :id="aboutId">
     <div>
       <div class="flex justify-center">
-        <h1 class="text-4xl pt-10 pb-10">About Me</h1>
+        <h1 class="text-4xl py-10">About Me</h1>
       </div>
       <div class="grid xl:grid-cols-2 grid-cols-1">
         <div>

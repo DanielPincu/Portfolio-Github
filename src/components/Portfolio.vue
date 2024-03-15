@@ -1,9 +1,11 @@
 <template>
+  
   <div :id="portfolioId">
+    <h1 class="text-center text-4xl pt-20 pb-10">Showcase</h1>
     <!-- Filter dropdown -->
     <div class="mb-4">
       <label for="category" class="block text-sm font-medium text-gray-700">Filter by Category:</label>
-      <select id="category" v-model="selectedCategory" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-blue-100 dark:bg-red-100 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:focus:ring-red-500 dark:focus:border-red-500">
+      <select id="category" v-model="selectedCategory" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-blue-100 dark:bg-red-100 rounded-md shadow-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:focus:ring-red-500 dark:focus:border-red-500">
         <option value="" class="bg-yellow-700">All</option>
         <option v-for="category in categories" :key="category">{{ category }}</option>
       </select>
@@ -15,9 +17,9 @@
 
 
  <div class="grid md:grid-cols-2 gap-10 mt-16">
-      <div v-for="(card, index) in filteredCards" :key="index" class="suitcase-card  cursor-pointer" @click="toggleVisibility(index)">
+      <div v-for="(card, index) in filteredCards" :key="index" class="suitcase-card cursor-pointer" @click="toggleVisibility(index)">
         <div class="suitcase-wrapper">
-          <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden">
+          <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 shadow-xl">
             <div class="suitcase-top bg-blue-400 dark:bg-red-400 p-4 relative">
               <div class="handle bg-blue-600 dark:bg-red-700 w-6 h-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
             </div>

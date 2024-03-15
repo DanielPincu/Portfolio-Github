@@ -1,10 +1,10 @@
 <template>  
-  <div class="flex justify-center md:pt-10 pt-0">
+  <div class="2xl:flex justify-center md:pt-10 pt-0 hidden">
     <h1 class="text-4xl pt-16 pb-16">{{ pageTitle.title }}</h1>
   </div>
 
-  <div class="grid md:grid-cols-4 grid-cols-2 items-center gap-5 md:pb-10 mb-16">
-    <div v-for="(service, index) in services" :key="index" @click="toggleVisibility(index)" class="cursor-pointer bg-blue-200 dark:bg-red-200 rounded-3xl drop-shadow-xl h-60 flex flex-col items-center mb-10 hover:scale-[103%] duration-500">
+  <div class="2xl:grid md:grid-cols-4 grid-cols-2 items-center gap-5 md:pb-10 mb-16 hidden">
+    <div v-for="(service, index) in services" :key="index" @click="toggleVisibility(index)" class=" cursor-pointer border-2 border-blue-300 bg-blue-200 dark:bg-red-200 rounded-3xl drop-shadow-xl h-60 flex flex-col items-center mb-10 hover:scale-[103%] duration-500">
       <h1 class="text-2xl text-blue-500 dark:text-red-500 text-center pt-10">{{ service.title }}</h1>
       <svg class="text-blue-500 dark:text-red-500 w-32 md:w-64 justify-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" :d="service.svgPath" />

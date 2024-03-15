@@ -10,7 +10,7 @@
         <p class="text-center text-gray-500">{{ profile.title }}</p>
       </div>
       <!-- Additional sections -->
-      <div v-for="(additionalSection, index) in additionalSections" :key="'additionalSection' + index" class="border-2 border-blue-300 dark:border-red-300 mx-10 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16">
+      <div v-for="(additionalSection, index) in additionalSections" :key="'additionalSection' + index" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-10 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16">
         <h1 class="text-xl font-bold">{{ additionalSection.title }}</h1>
         <p class="text-xl">{{ additionalSection.content }}</p>
       </div>
@@ -20,7 +20,7 @@
     <!-- Dynamic Sections -->
     <div v-for="(section, index) in dynamicSections" :key="index" class="pt-10">
       <h1 class="font-bold text-2xl text-center pt-5">{{ section.title }}</h1>
-      <div v-for="(item, idx) in section.items" :key="idx" class="border-2 border-blue-300 dark:border-red-300 mx-10 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center">
+      <div v-for="(item, idx) in section.items" :key="idx" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-10 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center">
         <h1 class="text-xl font-bold px-4">{{ item.name }}</h1>
         <div class="w-36 xl:w-56 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
           <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-white p-1 leading-none rounded-full" :style="{ width: item.percentage }">{{ item.percentage }}</div>
