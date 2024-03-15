@@ -30,7 +30,7 @@
       </label>
 
       <!-- Welcome Text -->
-      <p class="text-xl md:text-3xl xl:text-5xl pl-3 mb-1 text-white">{{ welcomeText }}</p>
+      <p class="text-xl md:text-3xl xl:text-5xl pl-3 mb-1 text-white">{{ welcomeText }}<span class="animate-pulse">|</span></p>
 
       <!-- CV Buttons -->
       <div class="flex md:pt-5 2xl:pt-24">
@@ -76,4 +76,16 @@ const scrollTo = (target, event) => {
 
 <style>
 /* Your component styles here */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 0.3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
 </style>
