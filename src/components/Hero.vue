@@ -17,7 +17,7 @@
   
 
 
-  <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-center mb-20">
     <h1 class="text-sm md:text-xl pb-10 xl:text-3xl font-bold text-white">
       I’m Daniel Pincu <br> <span class="text-blue-500 dark:text-red-500">Front-end</span> Developer
     </h1>
