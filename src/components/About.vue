@@ -9,7 +9,7 @@
           <p v-for="(paragraph, index) in paragraphs" :key="index" class="mb-5 text-xl">{{ paragraph }}</p>
         </div>
         <div class="hidden lg:block">
-          <img class="w-96 ml-20" :src="imageSrc" alt="">
+          <img class="w-96 mx-auto" :src="imageSrc" alt="">
         </div>
       </div>
 
