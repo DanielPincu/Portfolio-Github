@@ -29,11 +29,11 @@
 </p>
    <div class="flex md:pt-5 2xl:pt-24">
     <a href=".//assets/img/cv.pdf">
-  <button class="hidden dark:block cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-10 md:mr-44 2xl:mr-64">Fetch CV</button>
+  <button class="hidden dark:block cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">Fetch CV</button>
 </a>
 
 <a href="/assets/img/videocv.mp4">
-  <button class="block dark:hidden cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-10 md:mr-44 2xl:mr-64">Watch CV</button>
+  <button class="block dark:hidden cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">Watch CV</button>
 
   <a href="/assets/img/videocv.mp4">
   <button class="hidden dark:block cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-blue-400 dark:to-blue-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44">Watch CV</button>
