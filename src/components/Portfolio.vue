@@ -78,6 +78,4 @@ const filteredCards = computed(() => {
 
 </script>
 
-<style>
-/* Add your custom styles here */
-</style>
+

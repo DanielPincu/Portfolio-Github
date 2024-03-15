@@ -8,7 +8,7 @@
         <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle lg:w-[1200px]">
           <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
             <!--  -->
-            <iframe :src="websiteUrl" frameborder="0" allowfullscreen class="w-full h-[600px]"></iframe>
+            <iframe :src="websiteUrl" frameborder="0" allowfullscreen class="w-full h-[500px] 2xl:h-[600px]"></iframe>
           </div>
           <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
             <button @click="$emit('closeModal')" type="button" class="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-red-600 text-base font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
