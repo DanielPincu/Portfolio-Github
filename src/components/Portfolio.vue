@@ -22,8 +22,8 @@
               <div class="handle bg-blue-600 dark:bg-red-700 w-6 h-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
             </div>
             <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 h-80 xl:h-64 dark:bg-red-200 p-4">
-              <h1 class="text-4xl text-gray-800 font-bold cursor-pointer mb-5">{{ card.title }}</h1>
-              <p class="text-lg">{{ card.description }}</p>
+              <h1 class="text-4xl text-gray-800 font-bold cursor-pointer mb-5 px-10">{{ card.title }}</h1>
+              <p class="text-lg 2xl:px-10">{{ card.description }}</p>
             </div>
             <div v-show="visibleDiv === index">
               
