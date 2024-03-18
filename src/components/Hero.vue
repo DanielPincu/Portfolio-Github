@@ -48,7 +48,7 @@
         <!-- Video CV -->
         <div v-if="isVideoCvVisible" class="mb-4">
           <h3 class="text-lg font-bold mb-2">Video CV</h3>
-          <video controls autoplay class="w-[1000px]" :src="cvWatchLink" alt="Video CV"></video>
+          <video controls autoplay class=" w-64 xl:w-[1000px] xl:h-[500px] " :src="cvWatchLink" alt="Video CV"></video>
         </div>
         <!-- PDF Viewer -->
         <div v-if="isPdfCvVisible" class="mb-4">
@@ -58,7 +58,7 @@
         <!-- Download CV -->
         <div v-if="isDownloadCvVisible">
          
-          <iframe :src="cvFetchLink" class="w-64 h-32 xl:w-[1000px] xl:h-[600px]" frameborder="0"></iframe>
+          <iframe :src="cvFetchLink" class="w-64 h-32 xl:w-[1000px] xl:h-[500px]" frameborder="0"></iframe>
           <a :href="cvFetchLink" class="text-blue-500">{{ cvFetchText }}</a>
         </div>
         <button @click="closeModal" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Close</button>
