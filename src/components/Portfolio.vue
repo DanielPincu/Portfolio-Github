@@ -44,8 +44,6 @@ import { ref, computed } from 'vue';
 import { portfolioCards } from '../modules/portfolio.js';
 import WebsiteModal from './Modal.vue';
 
-const portfolioId = 'portfolio';
-
 // Define reactive variables
 const selectedCategory = ref('');
 const visibleDiv = ref(null);
@@ -75,6 +73,7 @@ const filteredCards = computed(() => {
   if (!selectedCategory.value) return portfolioCards;
   return portfolioCards.filter(card => card.category === selectedCategory.value);
 });
+const portfolioId = 'portfolio';
 
 </script>
 
