@@ -58,7 +58,7 @@
         <!-- Download CV -->
         <div v-if="isDownloadCvVisible">
          
-          <iframe :src="cvFetchLink" class="w-96 h-96 xl:w-[1000px] xl:h-[600px]" frameborder="0"></iframe>
+          <iframe :src="cvFetchLink" class="w-full h-40 xl:w-[1000px] xl:h-[600px]" frameborder="0"></iframe>
           <a :href="cvFetchLink" class="text-blue-500">{{ cvFetchText }}</a>
         </div>
         <button @click="closeModal" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Close</button>
