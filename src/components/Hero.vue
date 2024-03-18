@@ -126,14 +126,17 @@ const closeModal = () => {
 
 <style>
 
-
-/* Style for the modal content */
-.rounded-lg {
-  border-radius: 0.5rem;
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
 }
 
-/* Style for the close button */
-.button {
-  cursor: pointer;
+.animate-pulse {
+  animation: pulse 0.3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
 </style>
