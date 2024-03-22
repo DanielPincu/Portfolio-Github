@@ -11,7 +11,7 @@
           <iframe :src="websiteUrl" frameborder="0" allowfullscreen class="w-full h-[70vh]"></iframe>
         </div>
         <div class="bg-gray-50 px-4 py-3 flex flex-row-reverse">
-          <button @click="$emit('closeModal')" type="button" class="my-5 inline-flex justify-center w-full rounded-full  px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 ml-3 text-sm">
+          <button @click="$emit('closeModal')" type="button" class="my-5 inline-flex justify-center w-full rounded-full px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 ml-3 text-sm">
             Close
           </button>
         </div>

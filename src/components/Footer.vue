@@ -74,7 +74,7 @@
 
   <!--Copyright section-->
   <div
-    class="w-full  p-4 text-end text-neutral-900 bg-blue-300 dark:bg-red-300">
+    class="w-full text-sm p-4 text-end text-neutral-900 bg-blue-300 dark:bg-red-300">
     © 2024 Copyright:
     <a
       class="font-semibold"

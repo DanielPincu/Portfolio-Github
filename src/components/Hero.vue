@@ -61,7 +61,7 @@
           <iframe :src="cvFetchLink" class="w-64 h-32 xl:w-[1000px] xl:h-[500px]" frameborder="0"></iframe>
           <a :href="cvFetchLink" class="text-blue-500">{{ cvFetchText }}</a>
         </div>
-        <button @click="closeModal" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Close</button>
+        <button @click="closeModal" class="mt-4 px-4 py-2 text-sm w-full bg-blue-500 rounded-full text-white hover:bg-blue-600">Close</button>
       </div>
     </div>
   </div>

@@ -28,11 +28,7 @@
       </div>
     </div>
   </div>
-
-  <!-- Sticky Image -->
-  <div class="mt-5 ml-16 h-[390px] sticky xl:top-10">
-    <img class="w-80" src="/assets/img/bc.png" alt="">
-  </div>
+  
 </template>
 
 <script setup>

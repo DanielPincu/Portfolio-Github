@@ -29,30 +29,41 @@ export const profileData = {
       title: "Languages",
       items: [
         { name: "Romanian", percentage: "100%" },
-        { name: "English", percentage: "80%" },
-        { name: "Danish", percentage: "20%" }
+        { name: "English", percentage: "85%" },
+        { name: "Danish", percentage: "25%" }
       ]
     },
     {
       title: "Skills",
       items: [
-        { name: "HTML/CSS", percentage: "80%" },
-        { name: "Bootstrap", percentage: "80%" },
-        { name: "TailwindCSS", percentage: "80%" },
-        { name: "Wordpress", percentage: "50%" },
-        { name: "VueJS", percentage: "40%" },
-        { name: "ReactJS", percentage: "20%"}
+        { name: "HTML/CSS", percentage: "85%" },
+        { name: "Bootstrap", percentage: "85%" },
+        { name: "Javascript", percentage: "85%" },
+        { name: "SASS", percentage: "85%" },
+        
+        { name: "TailwindCSS", percentage: "85%" },
+        { name: "Wordpress", percentage: "75%" },
+        { name: "VueJS", percentage: "75%" },
+        { name: "ReactJS", percentage: "25%"},
+
       ]
     },
     {
       title: "Tools",
       items: [
-        { name: "VSCode", percentage: "80%" },
-        { name: "Figma", percentage: "80%" },
-        { name: "Photoshop", percentage: "50%" },
-        { name: "Illustrator", percentage: "50%" },
-        { name: "Github", percentage: "80%" }
+        { name: "VSCode", percentage: "85%" },
+        { name: "Github", percentage: "85%" },
+        { name: "Figma", percentage: "85%" },
+        { name: "Photoshop", percentage: "75%" },
+        { name: "Illustrator", percentage: "85%" },
+        { name: "InDesign", percentage: "85%" },
+        { name: "After Effects", percentage: "75%" },
+        { name: "Premiere Pro", percentage: "75%" },
+
+
+       
       ]
-    }
+    },
+    
   ];
   
