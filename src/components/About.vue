@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200" id="aboutId">
+  <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200">
     <div>
       <div class="flex justify-center">
         <h1 class="text-4xl py-10">About Me</h1>

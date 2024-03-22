@@ -11,25 +11,34 @@ export const portfolioCards = [
     
     {
       title: 'Chatognito',
-      description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding, Denmark",
+      description: "Chatognito lets you connect with a stranger at random for a one on one chat. Your chats are end to end encrypted and hence you can put forward your ideas freely",
       category: 'Web Design',
       imageUrl: '/assets/img/chat1.png',
-      // dynamicLink: '/assets/img/OK.mp4',
       dynamicLink: 'https://www.chatognito.com',
-      details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility',
+      details: 'Chatognito provides a space where individuals can share ideas, exchange perspectives, and simply have fun exploring new connections. As the creator of Chatognito, I am proud to showcase this project in my portfolio, highlighting its commitment to facilitating genuine human connections in an increasingly virtual landscape',
       
     },
 
     {
       title: 'Mini Me',
-      description: "I'm proud to present a project where I contributed and executed a comprehensive redesign for Trapholt Museum, renowned cultural institution in Kolding, Denmark",
+      description: "This was my first project as a multimedia designer student, that allowed me to explore my digital illustration skills while infusing elements of my personality into a whimsical and visually engaging avatar",
       category: 'Graphic Design',
       imageUrl: '/assets/img/mini.png',
-      // dynamicLink: '/assets/img/OK.mp4',
       dynamicLink: '/assets/img/mini.png',
-      details: 'The website features intuitive navigation, immersive imagery, and interactive elements to enhance the user experience. Additionally, I integrated functionalities such as event listings, virtual tours, and online ticketing to streamline visitor engagement and accessibility',
+      details: 'The resulting Mini Me illustration is not just a visual representation but also a reflection of my creative vision and technical skills. It stands as a testament to my ability to bring ideas to life through digital artistry and design',
       
     },
+
+    {
+      title: 'Starbucks Ad',
+      description: "For this project, I had the opportunity to create an advertisement for Starbucks, a globally recognized coffeehouse chain while effectively promoting their products and brand values",
+      category: 'Video Production',
+      imageUrl: '/assets/img/starbucks.png',
+      dynamicLink: '/assets/img/starbucks.mp4',
+      details: 'The primary goal of the advertisement was to showcase Starbucks commitment to quality, sustainability, and community. The video needed to capture the essence of the Starbucks experience and evoke a sense of warmth, comfort, and familiarity associated with the brand',
+      
+    },
+  
   
   ];
   
