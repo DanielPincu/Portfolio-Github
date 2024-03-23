@@ -28,7 +28,7 @@
             </div>
             <div v-show="visibleDiv === index">
               <a @click="openWebsite(card.dynamicLink)">
-                <img class="bg-blue-200 hover:scale-105 hover:border-4 hover:border-black dark:bg-red-200 ease-in-out duration-500"
+                <img class="bg-blue-200 hover:scale-105 hover:border-2 hover:border-blue-500 hover:dark:border-red-500 dark:bg-red-200 ease-in-out duration-500"
                      :src="card.imageUrl" alt="">
               </a>
               <p class="text-sm bg-blue-200 dark:bg-red-200 p-10">{{ card.details }}</p>
@@ -64,36 +64,35 @@
 import { ref, computed } from 'vue';
 import { portfolioCards } from '../modules/portfolio.js';
 
-// Define reactive variables
+//  reactive variables
 const selectedCategory = ref('');
 const visibleDiv = ref(null);
 const showModal = ref(false);
 const websiteUrl = ref('');
 
-// Function to toggle visibility
+// o toggle visibility
 const toggleVisibility = (index) => {
   visibleDiv.value = visibleDiv.value === index ? null : index;
 };
 
-// Function to open modal with website URL
+//  open modal with website url
 const openWebsite = (url) => {
   websiteUrl.value = url;
   showModal.value = true;
 };
 
-// Compute unique categories
-const categories = computed(() => {
+// Calculate unique categories
+  const categories = computed(() => {
   const uniqueCategories = new Set();
   portfolioCards.forEach(card => uniqueCategories.add(card.category));
   return Array.from(uniqueCategories);
 });
 
-// Compute filtered cards based on selected category
+//  filtered cards based on selected category
 const filteredCards = computed(() => {
   if (!selectedCategory.value) return portfolioCards;
   return portfolioCards.filter(card => card.category === selectedCategory.value);
 });
 
-// Portfolio ID
 const portfolioId = 'portfolio';
 </script>
