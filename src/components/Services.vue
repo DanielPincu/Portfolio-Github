@@ -1,5 +1,5 @@
 <template>  
-  <div class="xl:flex justify-center md:pt-10 pt-0 hidden">
+  <div class="xl:flex justify-center hidden">
     <h1 class="text-4xl pt-16 pb-16">{{ pageTitle.title }}</h1>
   </div>
 

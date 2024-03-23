@@ -27,7 +27,7 @@ const aboutId = ref('about');
 
 
 <!-- Left Column -->
-    <div class="col-span-3 hidden lg:block pb-5">
+    <div class="col-span-3 hidden lg:block pb-5 border-r-2 border-zinc-200">
         
         <CV />
 
@@ -35,7 +35,7 @@ const aboutId = ref('about');
 
 
 <!-- Center Column -->
-    <div class="lg:col-span-8 col-span-12 mx-5 lg:mx-10">
+    <div class="lg:col-span-8 col-span-12 mx-5 ">
 
         <Hero :id="homeId" />
         <Services />

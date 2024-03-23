@@ -21,11 +21,11 @@ export const portfolioCards = [
 
     {
       title: 'EASV Bootcamp',
-      description: "This was my first semester project as a multimedia designer where the task was experimenting with HTML, CSS and Bootstrap. I created a responsive website for a fictional bootcamp called EASV Bootcamp",
+      description: "This was my first semester project as a multimedia designer where the task was experimenting with HTML, CSS and Bootstrap.",
       category: 'Web Design',
       imageUrl: '/assets/img/bootcamp.png',
       dynamicLink: 'https://easv-bootstrap-bootcamp.vercel.app/',
-      details: 'The website features a clean and modern design, with a focus on user-friendly experience and engaging content. I incorporated elements such as interactive dropdown menu, images, and it was for the first time when I interacted with Javascript, in the Login form',
+      details: 'I created a responsive website for a fictional bootcamp called EASV Bootcamp. The website features a clean and modern design, with a focus on user-friendly experience and engaging content. I incorporated elements such as interactive dropdown menu, images, and it was for the first time when I interacted with Javascript, in the Login form',
       
     },
   
