@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home">
     <!-- Profile Info -->
     <div>
       <div class="flex justify-center">

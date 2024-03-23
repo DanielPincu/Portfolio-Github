@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <!-- Navigation Bar -->
+  
+    <!-- Mobile Navigation Bar -->
     <div class="lg:hidden sticky top-0 z-10 bg-blue-100 dark:bg-red-100 -mx-5">
       <div class="flex justify-center items-center mt-10">
         <div class="flex my-5">
@@ -64,7 +64,7 @@
         <button @click="closeModal" class="mt-4 px-4 py-2 text-sm w-full bg-blue-500 rounded-full text-white hover:bg-blue-600">Close</button>
       </div>
     </div>
-  </div>
+  
 </template>
 
 <script setup>

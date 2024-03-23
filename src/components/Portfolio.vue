@@ -1,6 +1,6 @@
 <template>
-  <div class="border-t-2 border-b-2 pb-20 border-zinc-200 pt-20">
-    <div :id="portfolioId">
+  <div class="border-t-2 border-b-2 pb-20 border-zinc-200 pt-20" id="portfolio">
+    <div>
       <h1 class="text-center text-4xl pb-10">Showcase</h1>
       <!-- Filter dropdown -->
       <div class="mb-4">
@@ -94,5 +94,4 @@ const filteredCards = computed(() => {
   return portfolioCards.filter(card => card.category === selectedCategory.value);
 });
 
-const portfolioId = 'portfolio';
 </script>

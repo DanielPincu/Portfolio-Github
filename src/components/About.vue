@@ -1,5 +1,5 @@
 <template>
-  <div class="border-b-2 border-zinc-200 pb-20">
+  <div class="border-b-2 border-zinc-200 pb-20" id="about">
     <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200">
       <div>
         <div class="flex justify-center">

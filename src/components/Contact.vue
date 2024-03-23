@@ -1,5 +1,5 @@
 <template>
-	<div class="flex justify-center items-center bg-blue-200 dark:bg-red-200 rounded-3xl shadow-xl mt-20" id="contactId">
+	<div class="flex justify-center items-center bg-blue-200 dark:bg-red-200 rounded-3xl shadow-xl mt-20" id="contact">
 	  <div class="container mx-auto">
 		<div class="w-full p-8 my-4 md:px-12">
 		  <div class="flex">
@@ -103,7 +103,5 @@
   };
   </script>
   
-  <style>
-  /* Your component styles here */
-  </style>
+  
   
