@@ -8,6 +8,7 @@
       <div class="border-b-2 border-zinc-200 pb-5">
         <h1 class="text-2xl font-bold text-center mt-5">{{ profile.name }}</h1>
         <p class="text-center text-gray-500">{{ profile.title }}</p>
+        
       </div>
       <!-- Additional sections -->
       <div v-for="(additionalSection, index) in additionalSections" :key="'additionalSection' + index" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16">

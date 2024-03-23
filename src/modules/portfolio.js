@@ -21,7 +21,7 @@ export const portfolioCards = [
 
     {
       title: 'EASV Bootcamp',
-      description: "This was my first semester project as a multimedia designer where the task was experimenting with HTML, CSS and Bootstrap.",
+      description: "This was my first semester web development project as a multimedia designer where the task was experimenting with HTML, CSS and Bootstrap.",
       category: 'Web Design',
       imageUrl: '/assets/img/bootcamp.png',
       dynamicLink: 'https://easv-bootstrap-bootcamp.vercel.app/',
