@@ -1,5 +1,5 @@
 export const pageTitle = {
-    title: 'Services',
+    title: "My services",
 };
 
 export const services = [

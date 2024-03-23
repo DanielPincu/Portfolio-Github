@@ -1,26 +1,28 @@
 <template>
-  <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200">
+  <div class="border-b-2 border-zinc-200 pb-20">
+    <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200">
     <div>
       <div class="flex justify-center">
         <h1 class="text-4xl py-10">About Me</h1>
       </div>
-      <div class="grid xl:grid-cols-2 grid-cols-1">
+      <div class="grid xl:grid-cols-2 gap-10 grid-cols-1">
         <div>
           <p v-for="(paragraph, index) in paragraphs" :key="index" class="mb-5 text-xl max-2xl:pl-5">{{ paragraph }}</p>
         </div>
         <div class="hidden lg:block">
-          <img class="w-96 mx-auto" :src="imageSrc" alt="">
+          <img class="rounded-3xl" :src="imageSrc" alt="">
         </div>
       </div>
 
-      <button v-if="!isReadMore" class="py-5" @click="toggleReadMore">{{ buttonText }}</button>
+      <button v-if="!isReadMore" class="py-5 px-5" @click="toggleReadMore">{{ buttonText }}</button>
 
       <div v-show="isReadMore">
-        <p class="text-xl py-10" v-for="(paragraph, index) in extraParagraphs" :key="index">{{ paragraph }}</p>
+        <p class="py-10 pl-5 italic md:mx-20" v-for="(paragraph, index) in extraParagraphs" :key="index">{{ paragraph }}</p>
 
-        <button @click="toggleReadMore">{{ buttonText }}</button>
+        <button class="px-5" @click="toggleReadMore">{{ buttonText }}</button>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
@@ -45,10 +47,10 @@ const paragraphs = ref([
 
 const extraParagraphs = ref([
   "Did I catched your attention? I'm always on the lookout for new opportunities. If you've got a project that needs a little extra flair, feel free to drop me a message. Let us make things come true!",
-  '"The choice has always been yours..." - Morpheus'
+  '"The choice has always been yours..." - Morpheus',
 ]);
 
-const imageSrc = ref("/assets/img/MiniMe.jpg");
+const imageSrc = ref("/assets/img/daniel.png");
 
 
 </script>

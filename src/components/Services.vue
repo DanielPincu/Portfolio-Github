@@ -1,6 +1,6 @@
 <template>  
-  <div class="xl:flex justify-center hidden">
-    <h1 class="text-4xl pt-16 pb-16">{{ pageTitle.title }}</h1>
+  <div class="pt-10 border-zinc-200 xl:flex justify-center hidden">
+    <h1 class="text-4xl pt-5 pb-16">{{ pageTitle.title }}</h1>
   </div>
 
   <div class="xl:grid md:grid-cols-4 grid-cols-2 items-center gap-5 md:pb-10 mb-16 hidden">
