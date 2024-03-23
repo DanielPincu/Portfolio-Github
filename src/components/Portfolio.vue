@@ -5,7 +5,9 @@
       <!-- Filter dropdown -->
       <div class="mb-4">
         <label for="category" class="block text-sm font-medium text-gray-700">Filter by Category:</label>
-        <select id="category" v-model="selectedCategory" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-blue-100 dark:bg-red-100 rounded-md shadow-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:focus:ring-red-500 dark:focus:border-red-500">
+        <select id="category"
+                v-model="selectedCategory"
+                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-blue-100 dark:bg-red-100 rounded-md shadow-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm dark:focus:ring-red-500 dark:focus:border-red-500">
           <option value="" class="bg-yellow-700">All</option>
           <option v-for="category in categories" :key="category">{{ category }}</option>
         </select>
@@ -25,8 +27,9 @@
               <p class="text-lg px-5 2xl:px-10">{{ card.description }}</p>
             </div>
             <div v-show="visibleDiv === index">
-              <a @click="openModalWithWebsite(card.dynamicLink)">
-                <img class="bg-blue-200 hover:scale-105 hover:border-4 hover:border-black dark:bg-red-200 ease-in-out duration-500" :src="card.imageUrl" alt="">
+              <a @click="openWebsite(card.dynamicLink)">
+                <img class="bg-blue-200 hover:scale-105 hover:border-4 hover:border-black dark:bg-red-200 ease-in-out duration-500"
+                     :src="card.imageUrl" alt="">
               </a>
               <p class="text-lg bg-blue-200 dark:bg-red-200 p-10">{{ card.details }}</p>
             </div>
@@ -44,7 +47,7 @@
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
         <div class="inline-block bg-white rounded-3xl text-left overflow-hidden shadow-xl transform transition-all my-8 align-middle w-[1200px]">
           <div class="bg-white px-4 pt-5 pb-4">
-            <iframe :src="modalWebsiteUrl" frameborder="0" allowfullscreen class="w-full h-[70vh]"></iframe>
+            <iframe :src="websiteUrl" frameborder="0" allowfullscreen class="w-full h-[70vh]"></iframe>
           </div>
           <div class="bg-gray-50 px-4 py-3 flex flex-row-reverse">
             <button @click="showModal = false" type="button" class="my-5 inline-flex justify-center w-full rounded-full px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 ml-3 text-sm">
@@ -65,7 +68,7 @@ import { portfolioCards } from '../modules/portfolio.js';
 const selectedCategory = ref('');
 const visibleDiv = ref(null);
 const showModal = ref(false);
-const modalWebsiteUrl = ref('');
+const websiteUrl = ref('');
 
 // Function to toggle visibility
 const toggleVisibility = (index) => {
@@ -73,8 +76,8 @@ const toggleVisibility = (index) => {
 };
 
 // Function to open modal with website URL
-const openModalWithWebsite = (url) => {
-  modalWebsiteUrl.value = url;
+const openWebsite = (url) => {
+  websiteUrl.value = url;
   showModal.value = true;
 };
 
@@ -90,6 +93,7 @@ const filteredCards = computed(() => {
   if (!selectedCategory.value) return portfolioCards;
   return portfolioCards.filter(card => card.category === selectedCategory.value);
 });
-const portfolioId = 'portfolio';
 
+// Portfolio ID
+const portfolioId = 'portfolio';
 </script>
