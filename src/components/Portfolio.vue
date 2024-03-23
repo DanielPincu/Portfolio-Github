@@ -28,7 +28,7 @@
             </div>
             <div v-show="visibleDiv === index">
               <a @click="openWebsite(card.dynamicLink)">
-                <img class="bg-blue-200 hover:scale-105 hover:border-2 hover:border-blue-500 hover:dark:border-red-500 dark:bg-red-200 ease-in-out duration-500"
+                <img class="bg-blue-200  border-t-2 border-b-2 border-transparent hover:border-blue-500 hover:dark:border-red-500 dark:bg-red-200 ease-in-out duration-100"
                      :src="card.imageUrl" alt="">
               </a>
               <p class="text-sm bg-blue-200 dark:bg-red-200 p-10">{{ card.details }}</p>
