@@ -36,15 +36,13 @@ export const profileData = {
     {
       title: "Skills",
       items: [
-        { name: "HTML/CSS", percentage: "85%" },
+        { name: "HTML/CSS/SCSS", percentage: "75%" },
+        { name: "Javascript", percentage: "75%" },
+        {name: "PHP", percentage: "75%" },
         { name: "Bootstrap", percentage: "85%" },
-        { name: "Javascript", percentage: "85%" },
-        { name: "SASS", percentage: "85%" },
-        
         { name: "TailwindCSS", percentage: "85%" },
-        { name: "Wordpress", percentage: "75%" },
-        { name: "VueJS", percentage: "75%" },
-        { name: "ReactJS", percentage: "25%"},
+        { name: "VueJS", percentage: "65%" },
+        { name: "Wordpress", percentage: "50%" },
 
       ]
     },
@@ -59,6 +57,24 @@ export const profileData = {
         { name: "InDesign", percentage: "85%" },
         { name: "After Effects", percentage: "75%" },
         { name: "Premiere Pro", percentage: "75%" },
+
+
+       
+      ]
+    },
+    {
+      title: "Hobbies",
+      items: [
+        { name: "Amatør Radio", percentage: "100%" },
+        { name: "Astronomy", percentage: "100%" },
+        { name: "Electronics", percentage: "100%" },
+        { name: "IoT ", percentage: "100%" },
+        { name: "3D Printing", percentage: "100%" },
+        { name: "AI Research", percentage: "100%" },
+        { name: "Web Dev", percentage: "100%" },
+        
+        
+        
 
 
        

@@ -1,5 +1,5 @@
 <template>
-	<div class="flex justify-center items-center bg-blue-200 dark:bg-red-200 rounded-3xl shadow-xl mt-20" id="contact">
+	<div class="flex justify-center items-center bg-blue-200 dark:bg-red-200 rounded-3xl shadow-xl mt-20 border-2 border-blue-300 dark:border-red-300" id="contact">
 	  <div class="container mx-auto">
 		<div class="w-full p-8 my-4 md:px-12">
 		  <div class="flex">
@@ -15,7 +15,7 @@
 			<textarea v-model="formData.message" placeholder="The choice has always been yours..." class="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:shadow-outline"></textarea>
 		  </div>
 		  <div class="my-2 w-1/2 lg:w-1/4">
-			<button @click="handleSubmit" class="uppercase bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 text-sm font-bold tracking-wide p-3 text-white rounded-full w-full">Leave Message</button>
+			<button @click="handleSubmit" class="uppercase  text-sm font-bold tracking-wide p-3 text-white rounded-full w-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50">Leave Message</button>
 		  </div>
 		</div>
 	  </div>

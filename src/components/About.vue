@@ -1,6 +1,6 @@
 <template>
   <div class="border-b-2 border-zinc-200 pb-20" id="about">
-    <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200">
+    <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200 border-2 border-blue-300 dark:border-red-300">
       <div>
         <div class="flex justify-center">
           <h1 class="text-4xl py-10">About Me</h1>
@@ -36,7 +36,7 @@ const toggleReadMore = () => {
 };
 
 const buttonText = computed(() => {
-  return isReadMore.value ? 'Read less' : 'Read more...';
+  return isReadMore.value ? 'VUE less' : 'VUE more...';
 });
 </script>
 

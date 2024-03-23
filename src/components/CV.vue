@@ -11,7 +11,7 @@
         
       </div>
       <!-- Additional sections -->
-      <div v-for="(additionalSection, index) in additionalSections" :key="'additionalSection' + index" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16">
+      <div v-for="(additionalSection, index) in additionalSections" :key="'additionalSection' + index" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16 ">
         <h1 class="text-xl font-bold">{{ additionalSection.title }}</h1>
         <p class="text-xl">{{ additionalSection.content }}</p>
       </div>
@@ -24,7 +24,7 @@
       <div v-for="(item, idx) in section.items" :key="idx" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center">
         <h1 class="text-xl font-bold px-4">{{ item.name }}</h1>
         <div class="w-36 xl:w-56 2xl:w-64 bg-blue-300 dark:bg-red-300 rounded-full">
-          <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-white p-1 leading-none rounded-full" :style="{ width: item.percentage }">{{ item.percentage }}</div>
+          <div class="bg-blue-500 dark:bg-red-500 text-xs font-bold text-center text-white p-1 leading-none rounded-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50" :style="{ width: item.percentage }">{{ item.percentage }}</div>
         </div>
       </div>
     </div>
