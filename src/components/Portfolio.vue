@@ -22,16 +22,16 @@
             <div class="suitcase-top bg-blue-400 dark:bg-red-400 p-4 relative">
               <div class="handle bg-blue-600 dark:bg-red-700 w-6 h-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
             </div>
-            <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 xl:h-48 dark:bg-red-200 p-4">
+            <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 h-52 dark:bg-red-200 p-4">
               <h1 class="text-4xl text-gray-800 font-bold cursor-pointer mb-5 2xl:pl-5">{{ card.title }}</h1>
-              <p class="text-sm mb-5 2xl:px-5">{{ card.description }}</p>
+              <p class=" mb-5 2xl:px-5">{{ card.description }}</p>
             </div>
             <div v-show="visibleDiv === index">
               <a @click="openWebsite(card.dynamicLink)">
                 <img class="bg-blue-200  border-t-2 border-b-2 border-transparent hover:border-blue-500 hover:dark:border-red-500 dark:bg-red-200 ease-in-out duration-100"
                      :src="card.imageUrl" alt="">
               </a>
-              <p class="text-sm bg-blue-200 dark:bg-red-200 p-10">{{ card.details }}</p>
+              <p class="bg-blue-200 dark:bg-red-200 p-10">{{ card.details }}</p>
             </div>
           </div>
         </div>
