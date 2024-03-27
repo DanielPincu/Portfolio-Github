@@ -52,8 +52,8 @@ export const portfolioCards = [
   
     {
       title: 'Remotely',
-      description: "Remotely is an app that connects workers and freelancers with companies around the world, providing a platform for networking, collaboration, and community building",
-      category: 'UX / UI',
+      description: "Remotely is an concept app that connects workers and freelancers with companies around the world, providing a platform for networking, collaboration, and community building",
+      category: 'UI/UX',
       imageUrl: '/assets/img/remotely_ss.png',
       dynamicLink: '/assets/img/remotely.mp4',
       details: 'I was part of a team that designed the user interface for Remotely, focusing on creating a seamless and intuitive experience for users. The app features a clean and modern design, with a user-friendly interface that encourages engagement and interaction. We incorporated elements such as profile creation, job listings, and messaging functionality to enhance the user experience and facilitate connections between remote workers and companies',
@@ -62,11 +62,11 @@ export const portfolioCards = [
   
     {
       title: 'Stockhub',
-      description: "Remotely is an app that connects workers and freelancers with companies around the world, providing a platform for networking, collaboration, and community building",
-      category: 'UX / UI',
+      description: "Stockhub is a UI/UX concept that provides users with real-time stock market data, news, and analysis, empowering them to make informed investment decisions",
+      category: 'UI/UX',
       imageUrl: '/assets/img/stockhub.png',
       dynamicLink: '/assets/img/stockhub.mp4',
-      details: 'I was part of a team that designed the user interface for Remotely, focusing on creating a seamless and intuitive experience for users. The app features a clean and modern design, with a user-friendly interface that encourages engagement and interaction. We incorporated elements such as profile creation, job listings, and messaging functionality to enhance the user experience and facilitate connections between remote workers and companies',
+      details: 'Stockhub is your all-in-one solution for everything related to the stock market. Beyond just tracking market trends and stock performance, Stockhub offers a unique virtual portfolio feature where you can experiment with different risk-free investment strategies',
       
     },
 
