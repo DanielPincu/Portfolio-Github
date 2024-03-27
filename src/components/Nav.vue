@@ -7,9 +7,9 @@
   </div>
   
  
-   <div class="mt-10 sticky top-[400px]  mb-5">
+   <div class="mt-10 sticky top-[400px] mb-5">
      <div v-for="(navItem, index) in navItems" :key="index" class="flex justify-evenly items-center my-5">
-       <a @click="scrollTo(navItem.href, $event)" class="text-lg font-bold text-blue-900 cursor-pointer hover:scale-110 hover:transition ease-in-out duration-700">{{ navItem.label }}</a>
+       <a @click="scrollTo(navItem.href, $event)" class="text-xl font-bold text-blue-900 cursor-pointer hover:scale-110 hover:transition ease-in-out duration-700">{{ navItem.label }}</a>
      </div>
    </div>
  </template>
