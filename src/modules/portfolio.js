@@ -50,6 +50,15 @@ export const portfolioCards = [
       
     },
   
+    {
+      title: 'Remotely',
+      description: "I had the opportunity to create an advertisement for Starbucks, a globally recognized coffeehouse chain while effectively promoting their products and brand values",
+      category: 'UX / UI',
+      imageUrl: '/assets/img/remotely_ss.png',
+      dynamicLink: '/assets/img/remotely.mp4',
+      details: 'The primary goal of the advertisement was to showcase Starbucks commitment to quality, sustainability, and community. The video needed to capture the essence of the Starbucks experience and evoke a sense of warmth, comfort, and familiarity associated with the brand',
+      
+    },
   
   ];
   
