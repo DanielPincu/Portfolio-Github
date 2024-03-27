@@ -70,6 +70,16 @@ export const portfolioCards = [
       
     },
 
+    {
+      title: 'Sædding',
+      description: "Our mission was to create a digital experience that would showcase the beauty and tranquility of Sædding Beach, a popular destination in South-West Denmark",
+      category: 'UI/UX',
+      imageUrl: '/assets/img/saedding.png',
+      dynamicLink: 'https://indd.adobe.com/view/87244edc-9900-46de-b2a3-469e5bea84c4',
+      details: 'The resulting interactive digital document features stunning visuals, engaging content, and interactive elements that bring the beach to life. Users can explore the various attractions, amenities, and activities available at Sædding Beach, making it easy to plan their visit and make the most of their time at this beautiful location. For this project we shot a drone video, took photos and created a digital magazine in Adobe InDesign',
+      
+    },
+
   ];
   
 

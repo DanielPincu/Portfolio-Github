@@ -36,7 +36,7 @@ const toggleReadMore = () => {
 };
 
 const buttonText = computed(() => {
-  return isReadMore.value ? 'VUE less' : 'VUE more...';
+  return isReadMore.value ? '' : 'VUE more...';
 });
 </script>
 
