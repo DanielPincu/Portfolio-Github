@@ -60,6 +60,16 @@ export const portfolioCards = [
       
     },
   
+    {
+      title: 'Stockhub',
+      description: "Remotely is an app that connects workers and freelancers with companies around the world, providing a platform for networking, collaboration, and community building",
+      category: 'UX / UI',
+      imageUrl: '/assets/img/stockhub.png',
+      dynamicLink: '/assets/img/stockhub.mp4',
+      details: 'I was part of a team that designed the user interface for Remotely, focusing on creating a seamless and intuitive experience for users. The app features a clean and modern design, with a user-friendly interface that encourages engagement and interaction. We incorporated elements such as profile creation, job listings, and messaging functionality to enhance the user experience and facilitate connections between remote workers and companies',
+      
+    },
+
   ];
   
 
