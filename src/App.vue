@@ -9,7 +9,16 @@ import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 
-import { ref } from 'vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS file
+AOS.init({
+    duration: 500,
+    easing: 'ease-in-out',
+    offset: 300,
+    once: true // Set animation to run only once
+});
+
+
 
 
 

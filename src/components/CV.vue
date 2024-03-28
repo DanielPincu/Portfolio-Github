@@ -11,7 +11,7 @@
         
       </div>
       <!-- Additional sections -->
-      <div v-for="(additionalSection, index) in additionalSections" :key="'additionalSection' + index" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16 ">
+      <div v-for="(additionalSection, index) in additionalSections" :key="'additionalSection' + index" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16" data-aos="flip-left">
         <h1 class="text-xl font-bold">{{ additionalSection.title }}</h1>
         <p class="text-xl">{{ additionalSection.content }}</p>
       </div>
@@ -19,7 +19,7 @@
     </div>
 
     <!-- Dynamic Sections -->
-    <div v-for="(section, index) in dynamicSections" :key="index" class="pt-10">
+    <div v-for="(section, index) in dynamicSections" :key="index" class="pt-10" data-aos="zoom-out-up">
       <h1 class="font-bold text-2xl text-center pt-5">{{ section.title }}</h1>
       <div v-for="(item, idx) in section.items" :key="idx" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center">
         <h1 class="text-xl font-bold px-4">{{ item.name }}</h1>
@@ -37,20 +37,22 @@ import { ref, onMounted } from 'vue';
 import anime from 'animejs';
 import { profileData, additionalSectionsData, dynamicSectionsData } from '../modules/cv';
 
+
+
 const profile = ref(profileData);
 const additionalSections = ref(additionalSectionsData);
 const dynamicSections = ref(dynamicSectionsData);
 
-onMounted(() => {
-  anime({
-    targets: '.tt',
-    opacity: [0, 1],
-    translateY: [-500, 0],
-    translateX: [400, 0], 
-    easing: "linear",
-    duration: 3000,
-  });
-});
+// onMounted(() => {
+//   anime({
+//     targets: '.tt',
+//     opacity: [0, 1],
+//     translateY: [-500, 0],
+//     translateX: [400, 0], 
+//     easing: "linear",
+//     duration: 1000,
+//   });
+// });
 </script>
 
 
