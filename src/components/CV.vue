@@ -2,16 +2,16 @@
   <div id="home">
     <!-- Profile Info -->
     <div>
-      <div class="flex justify-center">
+      <div class="flex justify-center" data-aos="fade-left">
         <img class="w-48 mt-10" :src="profile.image" :alt="profile.name">
       </div>
-      <div class="border-b-2 border-zinc-200 pb-5">
+      <div class="border-b-2 border-zinc-200 pb-5" data-aos="fade-down">
         <h1 class="text-2xl font-bold text-center mt-5">{{ profile.name }}</h1>
         <p class="text-center text-gray-500">{{ profile.title }}</p>
         
       </div>
       <!-- Additional sections -->
-      <div v-for="(additionalSection, index) in additionalSections" :key="'additionalSection' + index" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16" data-aos="flip-left">
+      <div v-for="(additionalSection, index) in additionalSections" :key="'additionalSection' + index" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 mt-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center justify-end h-16" data-aos="fade-right">
         <h1 class="text-xl font-bold">{{ additionalSection.title }}</h1>
         <p class="text-xl">{{ additionalSection.content }}</p>
       </div>
@@ -19,7 +19,7 @@
     </div>
 
     <!-- Dynamic Sections -->
-    <div v-for="(section, index) in dynamicSections" :key="index" class="pt-10" data-aos="zoom-out-up">
+    <div v-for="(section, index) in dynamicSections" :key="index" class="pt-10" data-aos="fade-right">
       <h1 class="font-bold text-2xl text-center pt-5">{{ section.title }}</h1>
       <div v-for="(item, idx) in section.items" :key="idx" class="shadow-xl border-2 border-blue-300 dark:border-red-300 mx-5 my-5 flex flex-col bg-blue-200 dark:bg-red-200 rounded-full items-center h-16 justify-center">
         <h1 class="text-xl font-bold px-4">{{ item.name }}</h1>
@@ -33,8 +33,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
-import anime from 'animejs';
+import { ref } from 'vue';
 import { profileData, additionalSectionsData, dynamicSectionsData } from '../modules/cv';
 
 
