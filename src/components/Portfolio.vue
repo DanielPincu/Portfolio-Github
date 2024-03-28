@@ -1,6 +1,13 @@
 <template>
   <div class="border-t-2 border-b-2 pb-20 border-zinc-200 pt-20" id="portfolio">
-    <div>
+    <div 
+     data-aos="flip-right"
+     data-aos-easing="ease-in-back"
+     data-aos-offset="700"
+     data-aos-duration="800"
+     >
+    
+
       <h1 class="text-center text-4xl pb-10">Showcase</h1>
       <!-- Filter dropdown -->
       <div class="mb-4">
@@ -20,8 +27,8 @@
     
       <div v-for="(card, index) in filteredCards" :key="index" class="suitcase-card cursor-pointer" @click="toggleVisibility(index)" 
      data-aos="zoom-in"
-     data-aos-easing="ease-in-back"
-     data-aos-duration="500"
+     data-aos-easing="ease-out-back"
+     data-aos-duration="1000"
      data-aos-offset="700">
         <div class="suitcase-wrapper">
           <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
@@ -34,7 +41,7 @@
             </div>
             <div v-show="visibleDiv === index">
               <a @click="openWebsite(card.dynamicLink)">
-                <img class="bg-blue-200  border-t-2 border-b-2 border-transparent hover:border-blue-500 hover:dark:border-red-500 dark:bg-red-200 ease-in-out duration-100"
+                <img class="bg-blue-200 border-t-2 border-b-2 border-transparent hover:border-blue-500 hover:dark:border-red-500 dark:bg-red-200 ease-in-out duration-100"
                      :src="card.imageUrl" alt="">
               </a>
               <p class="bg-blue-200 dark:bg-red-200 p-10">{{ card.details }}</p>

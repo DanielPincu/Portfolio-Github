@@ -5,7 +5,9 @@
       <div class="flex justify-center" data-aos="fade-right">
         <img class="w-48 mt-10" :src="profile.image" :alt="profile.name">
       </div>
-      <div class="border-b-2 border-zinc-200 pb-5" data-aos="flip-left">
+      <div class="border-b-2 border-zinc-200 pb-5 mb-16" 
+      data-aos="flip-up" 
+      >
         <h1 class="text-2xl font-bold text-center mt-5">{{ profile.name }}</h1>
         <p class="text-center text-gray-500">{{ profile.title }}</p>
         
@@ -28,6 +30,7 @@
     
     data-aos="fade-right"
     data-aos-duration="2000"
+    data-aos-offset="400"
     
     >
       <h1 class="font-bold text-2xl text-center pt-5">{{ section.title }}</h1>

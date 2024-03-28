@@ -1,5 +1,9 @@
 <template>
-	<div class="flex justify-center items-center bg-blue-200 dark:bg-red-200 rounded-3xl shadow-xl mt-20 border-2 border-blue-300 dark:border-red-300" id="contact">
+	<div class="flex justify-center items-center bg-blue-200 dark:bg-red-200 rounded-3xl shadow-xl mt-20 border-2 border-blue-300 dark:border-red-300" id="contact"
+	data-aos="flip-right"
+     data-aos-offset="1000"
+     data-aos-duration="1000"
+	>
 	  <div class="container mx-auto">
 		<div class="w-full p-8 my-4 md:px-12">
 		  <div class="flex">

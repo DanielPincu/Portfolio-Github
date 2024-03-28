@@ -1,13 +1,18 @@
 <template>  
   <div class="pt-10 border-zinc-200 xl:flex justify-center hidden">
-    <h1 class="text-4xl pt-5 pb-16">{{ pageTitle.title }}</h1>
+    <h1 class="text-4xl pt-5 pb-16" 
+     data-aos="flip-right"
+     data-aos-easing="ease-in-back"
+     data-aos-duration="500"
+     data-aos-offset="700"
+     >{{ pageTitle.title }}</h1>
   </div>
 
   <div class="xl:grid md:grid-cols-4 grid-cols-2 items-center gap-5 md:pb-10 mb-16 hidden" 
 
      data-aos="flip-right"
+     data-aos-duration="1000"
      data-aos-easing="ease-in-back"
-     data-aos-delay="600"
      data-aos-offset="700">
 
     <div v-for="(service, index) in services" :key="index" @click="toggleVisibility(index)" class=" cursor-pointer border-2 border-blue-300 dark:border-red-300 bg-blue-200 dark:bg-red-200 rounded-3xl drop-shadow-xl h-60 flex flex-col items-center mb-10 hover:scale-[103%] duration-500">
