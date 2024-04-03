@@ -13,8 +13,9 @@
 
     <div class="relative" 
     
-    data-aos="flip-left"
+    data-aos="flip-right"
     data-aos-duration="1000"
+    data-aos-offset="100"
  
     >
       <!-- Profile Image -->
