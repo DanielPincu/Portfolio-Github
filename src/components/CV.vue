@@ -30,7 +30,6 @@
     
     data-aos="fade-right"
     data-aos-duration="2000"
-    data-aos-offset="100"
     
     >
       <h1 class="font-bold text-2xl text-center pt-5">{{ section.title }}</h1>

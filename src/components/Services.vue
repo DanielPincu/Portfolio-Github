@@ -4,7 +4,7 @@
      data-aos="flip-right"
      data-aos-easing="ease-in-back"
      data-aos-duration="500"
-     data-aos-offset="700"
+     
      >{{ pageTitle.title }}</h1>
   </div>
 
@@ -13,7 +13,7 @@
      data-aos="flip-right"
      data-aos-duration="1000"
      data-aos-easing="ease-in-back"
-     data-aos-offset="700">
+     >
 
     <div v-for="(service, index) in services" :key="index" @click="toggleVisibility(index)" class=" cursor-pointer border-2 border-blue-300 dark:border-red-300 bg-blue-200 dark:bg-red-200 rounded-3xl drop-shadow-xl h-60 flex flex-col items-center mb-10 hover:scale-[103%] duration-500">
       <h1 class="text-2xl text-blue-500 dark:text-red-500 text-center pt-10">{{ service.title }}</h1>

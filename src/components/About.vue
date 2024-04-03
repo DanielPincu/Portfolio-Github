@@ -3,7 +3,6 @@
     <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200 border-2 border-blue-300 dark:border-red-300" 
     
      data-aos="flip-right"
-     data-aos-offset="700"
      data-aos-duration="1100"
      >
       <div>
@@ -45,6 +44,3 @@ const buttonText = computed(() => {
 });
 </script>
 
-<style>
-/* Your component styles here */
-</style>

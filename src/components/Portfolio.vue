@@ -3,7 +3,6 @@
     <div 
      data-aos="flip-right"
      data-aos-easing="ease-in-back"
-     data-aos-offset="700"
      data-aos-duration="800"
      >
     
@@ -29,7 +28,7 @@
      data-aos="zoom-in"
      data-aos-easing="ease-out-back"
      data-aos-duration="1000"
-     data-aos-offset="700">
+      >
         <div class="suitcase-wrapper">
           <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
             <div class="suitcase-top bg-blue-400 dark:bg-red-400 p-4 relative">
