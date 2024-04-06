@@ -132,3 +132,15 @@ button .liquid2 {
   box-shadow: 0 0 2.5px #7293ff, inset 0 0 2.5px #7293ff; /* Adjusted */
   transition-delay: 0.1s; /* Adjusted */
 }
+
+
+@keyframes blink {
+  0%, 100% { box-shadow: 0 0 50px 5px blue; }
+  50% { box-shadow: 0 0 50px 5px red; }
+}
+
+.blinking {
+
+  
+  animation: blink 5s infinite ease-in-out;
+}

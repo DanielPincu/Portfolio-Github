@@ -17,7 +17,7 @@
 
 
       <!-- Profile Image -->
-      <img class="rounded-full border-4 border-blue-500 dark:border-red-500 mx-auto w-[90%] m-10 dark:scale-x-[-1]" :src="profileImageSrc" alt="">
+      <img class="rounded-full blinking border-blue-500 dark:border-red-500 mx-auto w-[90%] m-10 dark:scale-x-[-1]" :src="profileImageSrc" alt="">
 
       <!-- Welcome Message -->
       <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
