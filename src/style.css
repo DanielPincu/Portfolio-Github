@@ -17,11 +17,9 @@ body {
 
 
 .button {
-  font: 700 15px consolas; /* Half the original font size */
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 10px 30px; /* Half the original padding */
   position: relative;
   overflow: hidden;
   border-radius: 50px;
