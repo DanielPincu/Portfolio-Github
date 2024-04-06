@@ -52,7 +52,7 @@ AOS.init({
 
 
 <!-- Center Column -->
-    <div class="lg:col-span-8 col-span-12 mx-5">
+    <div class="lg:col-span-8 col-span-12 mx-5 blink-sm-blue blink-sm-red">
 
         <Hero />
         <Services />
