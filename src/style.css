@@ -82,16 +82,16 @@ button .liquid2 {
 
 .button .liquid::after {
   border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
-  box-shadow: 0 0 5px 2.5px #7293ff, inset 0 0 2.5px #7293ff; /* Adjusted */
+  background: rgba(40, 20, 20, 1);
+  box-shadow: 0 0 5px 2.5px red, inset 0 0 2.5px #7293ff; /* Adjusted */
   animation: animate 5s linear infinite;
   opacity: 0.8;
 }
 
 .button .liquid2::after {
   border-radius: 45%;
-  background: rgba(20, 20, 20, 1);
-  box-shadow: 0 0 5px 2.5px #7293ff, inset 0 0 2.5px #7293ff; /* Adjusted */
+  background: rgba(40, 20, 20, 1);
+  box-shadow: 0 0 5px 2.5px blue, inset 0 0 2.5px #7293ff; /* Adjusted */
   animation: animate 5s linear infinite;
   opacity: 0.8;
 }
@@ -122,10 +122,10 @@ button .liquid2 {
 }
 
 .button:hover .liquid {
-  top: -60px; /* Half the original value */
+  top: -90px; /* Half the original value */
 }
 .button:hover .liquid2 {
-  top: -60px; /* Half the original value */
+  top: -90px; /* Half the original value */
 }
 
 .button:hover {
