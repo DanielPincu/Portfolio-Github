@@ -1,26 +1,3 @@
-<!-- <script setup>
-
-import CV from './components/CV.vue'
-import Hero from './components/Hero.vue'
-import Services from './components/Services.vue'
-import Nav from './components/Nav.vue'
-import Portfolio from './components/Portfolio.vue'
-import About from './components/About.vue'
-import Contact from './components/Contact.vue'
-import Footer from './components/Footer.vue'
-
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS CSS file
-AOS.init({
-    
-    once: true,
-});
-
-
-
-
-
-</script> -->
 
 <script setup>
   import CV from './components/CV.vue'
@@ -32,22 +9,32 @@ AOS.init({
   import Contact from './components/Contact.vue'
   import Footer from './components/Footer.vue'
 
-  // Function to check if the device is a mobile device
-  const isMobileDevice = () => {
-    return window.innerWidth <= 768; // Adjust the breakpoint as needed
-  };
+  // // Function to check if the device is a mobile device
+  // const isMobileDevice = () => {
+  //   return window.innerWidth <= 768; // Adjust the breakpoint as needed
+  // };
 
-  // It disables the stupid animations on mobile devices
-  if (!isMobileDevice()) {
-    import('aos').then(module => {
-      const AOS = module.default;
-      import('aos/dist/aos.css').then(() => {
-        AOS.init({
-          once: true,
-        });
-      });
-    });
-  }
+  // // It disables the stupid animations on mobile devices
+  // if (!isMobileDevice()) {
+  //   import('aos').then(module => {
+  //     const AOS = module.default;
+  //     import('aos/dist/aos.css').then(() => {
+  //       AOS.init({
+  //         once: true,
+  //       });
+  //     });
+  //   });
+  // }
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS file
+AOS.init({
+    
+    once: true,
+});
+
+
+  
 </script>
 
 <template>
